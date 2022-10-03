@@ -19,7 +19,7 @@ const SpotLight = () => {
             </Grid>
             <Grid container spacing={3} className="spotlight-bottom">
                 <Grid item md={8} className="spotlight-bottom-content" >
-                    <h4>Will i loose my hair if i do this ?</h4>
+                    <h4>Will i loose my hair if i Masturbate ?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </Grid>
             </Grid>

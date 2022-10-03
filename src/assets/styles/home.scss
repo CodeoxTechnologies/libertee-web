@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://use.typekit.net/gak5scy.css");
 
 body {
     background: #f2f2f2;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'work-sans', sans-serif;
 }
 
 .home {
@@ -76,45 +77,112 @@ body {
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
+
             .spotlight-top {
                 display: flex;
                 flex-direction: row;
+
                 .spotlight-text {
                     color: #fff;
                     padding: 15px;
                     font-size: 12px;
                 }
+
                 .read-more-spotlight {
                     padding: 20px;
                     justify-content: flex-end;
                     float: right;
+
                     button {
                         border-radius: 20px;
-                        padding: 10px 20px 10px 20px;
+                        padding: 10px;
                         border: none;
                         text-transform: uppercase;
+                        background: #fff;
                     }
-    
+
                 }
             }
+
             .spotlight-bottom {
                 .spotlight-bottom-content {
                     position: absolute;
                     bottom: 0%;
                     color: #fff;
                     margin: 10px;
+
                     h4 {
-                        color:#fff;
+                        color: #fff;
                     }
+
                     p {
-                        color:#B4B4B4;
+                        color: #B4B4B4;
                         font-size: 12px;
                     }
 
                 }
             }
-            
-            
+        }
+
+        .commitment-section {
+            font-family: work-sans, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            width: 760px;
+            height: 435px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            background: #fff;
+            position: relative;
+
+            .commitment-section-heading {
+                font-size: 24px;
+            }
+
+            .commitment-section-body {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .commitment-section-body-button {
+                    margin: 30px;
+
+                    .button-black {
+                        display: flex;
+                        background: #000;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        padding: 10px;
+                        color: #fff;
+                    }
+                }
+
+                .commitment-section-body-list {
+                    display: flex;
+                    flex-direction: column;
+
+                    .commitment-section-body-list-item {
+                        margin: 10px 10px 25px 10px;
+                        justify-items: flex-start;
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .commitment-section-body-image {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    img {
+                        width: 221.95px;
+                        height: 381.74px;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                    }
+                }
+            }
         }
     }
 }

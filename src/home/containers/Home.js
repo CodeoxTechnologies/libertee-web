@@ -3,6 +3,7 @@ import { Grid } from '@mui/material';
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import SpotLight from '../components/Spotlight';
+import Commitment from '../components/Commitment';
 
 class Home extends Component {
   render() {
@@ -16,7 +17,7 @@ class Home extends Component {
               <SpotLight />
             </Grid>
             <Grid item md={6} lg={6} sm={12} xs={12}>
-              {/* <SpotLight /> */}
+              <Commitment />
             </Grid>
           </Grid>
         </div>
