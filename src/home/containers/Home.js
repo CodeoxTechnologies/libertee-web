@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import SpotLight from '../components/Spotlight';
 import Commitment from '../components/Commitment';
+import NewsLetter from '../components/NewsLetter'
+import Testimonial from '../components/Testimonial';
 
 class Home extends Component {
   render() {
@@ -11,8 +13,8 @@ class Home extends Component {
       <div className='home'>
         <Header />
         <Navigation />
-        <div className='spotlight-testimonials'>
-          <Grid container spacing={2}>
+        <div className='spotlight-commitment'>
+          <Grid container >
             <Grid item md={6} lg={6} sm={12} xs={12}>
               <SpotLight />
             </Grid>
@@ -21,6 +23,21 @@ class Home extends Component {
             </Grid>
           </Grid>
         </div>
+        <div className='newsletter-section'>
+          <Grid container >
+            <Grid item md={12} xs={12} sm={12} lg={12} >
+              <NewsLetter />
+            </Grid>
+          </Grid>
+        </div>
+        <div className='newsletter-section'>
+          <Grid container >
+            <Grid item md={12} xs={12} sm={12} lg={12} >
+              <Testimonial />
+            </Grid>
+          </Grid>
+        </div>
+  
 
       </div>
     );
