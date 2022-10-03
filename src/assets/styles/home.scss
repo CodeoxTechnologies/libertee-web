@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    .header {
+        background: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 90px;
+        }
+
+        .libertee {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+
+            .libertee-logo {
+                width: 135px;
+            }
+        }
+
+        .navigation-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .shoppingcart {
+                padding: 15px;
+            }
+        }
+    }
+
+    .navigation {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #fff;
+
+        span {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .spotlight-testimonials {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+
+        // justify-content: space-between;
+        .spotlight-section {
+            background: url('../images/spotlight.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 759.64px;
+            height: 434.08px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .spotlight-top {
+                display: flex;
+                flex-direction: row;
+                .spotlight-text {
+                    color: #fff;
+                    padding: 15px;
+                    font-size: 12px;
+                }
+                .read-more-spotlight {
+                    padding: 20px;
+                    justify-content: flex-end;
+                    float: right;
+                    button {
+                        border-radius: 20px;
+                        padding: 10px 20px 10px 20px;
+                        border: none;
+                        text-transform: uppercase;
+                    }
+    
+                }
+            }
+            .spotlight-bottom {
+                .spotlight-bottom-content {
+                    position: absolute;
+                    bottom: 0%;
+                    color: #fff;
+                    margin: 10px;
+                    h4 {
+                        color:#fff;
+                    }
+                    p {
+                        color:#B4B4B4;
+                        font-size: 12px;
+                    }
+
+                }
+            }
+            
+            
+        }
+    }
+}
