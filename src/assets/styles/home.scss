@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url("https://use.typekit.net/gak5scy.css");
 
 body {
@@ -61,11 +61,7 @@ body {
     }
 
     .spotlight-testimonials {
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-
-        // justify-content: space-between;
+        margin: 20px 0px 20px 60px;
         .spotlight-section {
             background: url('../images/spotlight.png');
             background-repeat: no-repeat;
@@ -92,15 +88,6 @@ body {
                     padding: 20px;
                     justify-content: flex-end;
                     float: right;
-
-                    button {
-                        border-radius: 20px;
-                        padding: 10px;
-                        border: none;
-                        text-transform: uppercase;
-                        background: #fff;
-                    }
-
                 }
             }
 
@@ -148,15 +135,6 @@ body {
 
                 .commitment-section-body-button {
                     margin: 30px;
-
-                    .button-black {
-                        display: flex;
-                        background: #000;
-                        border-radius: 20px;
-                        text-transform: uppercase;
-                        padding: 10px;
-                        color: #fff;
-                    }
                 }
 
                 .commitment-section-body-list {

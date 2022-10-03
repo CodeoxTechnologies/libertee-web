@@ -13,7 +13,7 @@ const SpotLight = () => {
                 </Grid>
                 <Grid item md={6} >
                     <div className="read-more-spotlight">
-                        <button>Read more </button>
+                        <button className="button-white"> Read more </button>
                     </div>
                 </Grid>
             </Grid>
