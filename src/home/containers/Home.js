@@ -12,9 +12,9 @@ class Home extends Component {
     return (
       <div className='home'>
         <Header />
-        <Navigation />
+        {/* <Navigation />
         <div className='spotlight-commitment'>
-          <Grid container >
+          <Grid container spacing={2} >
             <Grid item md={6} lg={6} sm={12} xs={12}>
               <SpotLight />
             </Grid>
@@ -36,7 +36,7 @@ class Home extends Component {
               <Testimonial />
             </Grid>
           </Grid>
-        </div>
+        </div> */}
   
 
       </div>

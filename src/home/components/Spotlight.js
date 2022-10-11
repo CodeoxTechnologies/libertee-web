@@ -1,10 +1,11 @@
 import { Grid } from "@mui/material";
 import React from "react";
+import { Paper } from '@mui/material';
 import spotlight from '../../assets/images/spotlight.png';
 
 const SpotLight = () => {
     return (
-        <div className="spotlight-section">
+        <Paper className="spotlight-section" >
             <Grid container spacing={2} className="spotlight-top" >
                 <Grid item md={6}>
                     <div className="spotlight-text">
@@ -23,7 +24,7 @@ const SpotLight = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </Grid>
             </Grid>
-        </div>
+        </Paper>
     )
 }
 export default SpotLight;  

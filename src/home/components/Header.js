@@ -20,8 +20,8 @@ const Header = () => {
             </div>
             <div>
                 <div className="navigation-icons">
-                    <AddShoppingCartIcon fontSize="large" className="shoppingcart" />
-                    <PersonIcon fontSize="large"  className="person"  />
+                    <AddShoppingCartIcon  className="shoppingcart" />
+                    <PersonIcon   className="person"  />
                 </div>
             </div>
         </div>

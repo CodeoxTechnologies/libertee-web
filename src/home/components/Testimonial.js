@@ -11,7 +11,7 @@ const Testimonial = () => {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container  align="center">
+            <Grid container >
                 <Grid item md={3} xs={3} lg={3} sm={3}>
                 </Grid>
                 <Grid item md={6} xs={6} lg={6} sm={6}>
