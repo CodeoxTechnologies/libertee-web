@@ -15,9 +15,9 @@ const NewsLetter = () => {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container align="center">
-                <Grid item md={6} lg={6} sm={12} xs={6}>
-                    <div>
+            <Grid container >
+                <Grid item md={6} lg={6} sm={12} xs={12}>
+                    <div className="newsletter-flex">
                         Newsletters on sexual health
                         <Checkbox
                             color="primary"
@@ -28,8 +28,8 @@ const NewsLetter = () => {
                         />
                     </div>
                 </Grid>
-                <Grid item md={6} lg={6} sm={12} xs={6}>
-                    <div>
+                <Grid item md={6} lg={6} sm={12} xs={12}>
+                    <div className="newsletter-flex">
                         Updates, offers and newsletters
                         <Checkbox
                             color="primary"
@@ -41,7 +41,7 @@ const NewsLetter = () => {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container align="center">
+            <Grid container>
                 <Grid item md={12} xs={12} sm={12} lg={12}>
                     <div className="newsletter-subscribe">
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />

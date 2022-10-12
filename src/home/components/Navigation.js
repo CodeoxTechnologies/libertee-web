@@ -6,10 +6,10 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <span>
-                <MenuOpenIcon fontSize="large" /> Learn
+                <MenuOpenIcon  /> Learn
             </span>
             <span>
-                <LocalMallIcon fontSize="large" /> Buy
+                <LocalMallIcon  /> Buy
             </span>
 
         </div>

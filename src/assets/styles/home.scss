@@ -8,6 +8,8 @@ body {
 
 @media screen and (min-width: 250px) and (max-width: 768px) {
     .home {
+
+        // header
         .header {
             font-family: 'montserrat', sans-serif;
             background: #fff;
@@ -16,33 +18,147 @@ body {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
             .logo {
                 width: 48px;
             }
+
             .libertee {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 .libertee-logo {
                     width: 98px;
                     height: 26px;
                 }
+
                 p {
                     font-size: 9px;
                     font-weight: 300;
                     align-items: center;
                 }
             }
+
             .navigation-icons {
-                font-size: 18px;;
-            }   
-           
-        }   
-       
+                font-size: 18px;
+                ;
+            }
+
+        }
+
+        // navigation
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #fff;
+
+            span {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+        .spotlight-section {
+            margin-top: 20px;
+            font-family: 'work-sans', sans-serif;
+            font-style: normal;
+            background: url('../images/spotlight.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+
+            .spotlight-top {
+                display: flex;
+                flex-direction: row;
+
+                .spotlight-text {
+                    color: #fff;
+                    padding: 15px;
+                    font-size: 12px;
+                }
+
+                .read-more-spotlight {
+                    padding: 10px;
+                    justify-content: flex-end;
+                    float: right;
+                    margin: 10px;
+                }
+            }
+
+            .spotlight-bottom {
+                .spotlight-bottom-content {
+                    position: absolute;
+                    bottom: 0%;
+                    color: #fff;
+                    margin: 10px;
+
+                    .spotlight-title {
+                        color: #fff;
+                        margin: 0px;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    .spotlight-description {
+                        color: #B4B4B4;
+                        font-size: 10px;
+                    }
+
+                }
+            }
+        }
+        .commitment-desktop {
+            display: none;
+        }
+        .newsletter-container { 
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            .newsletter-flex {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .newsletter-subscribe {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                input {
+                    width: 70%;
+                    border-radius: 20px;
+                    padding: 8px;
+                    border: none;
+                    background: #F2F2F2;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width: 768px ) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .home {
         .header {
             font-family: 'montserrat', sans-serif;
@@ -52,29 +168,34 @@ body {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
             .logo {
                 width: 48px;
             }
+
             .libertee {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 .libertee-logo {
                     width: 98px;
                     height: 26px;
                 }
+
                 p {
                     font-size: 9px;
                     font-weight: 300;
                     align-items: center;
                 }
             }
+
             .navigation-icons {
-                font-size: 18px;;
-            }   
-           
-        }   
-       
+                font-size: 18px;
+            }
+
+        }
+
     }
 }
 
@@ -88,35 +209,35 @@ body {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-    
+
             .logo {
                 width: 90px;
             }
-    
+
             .libertee {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 font-size: 12px;
-    
+
                 .libertee-logo {
                     width: 135px;
                 }
             }
-    
+
             .navigation-icons {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-    
+
                 .shoppingcart {
                     padding: 15px;
                 }
             }
         }
-    
+
         .navigation {
             margin-top: 10px;
             display: flex;
@@ -124,7 +245,7 @@ body {
             justify-content: center;
             align-items: center;
             border-bottom: 2px solid #fff;
-    
+
             span {
                 padding: 15px;
                 display: flex;
@@ -133,10 +254,10 @@ body {
                 margin-bottom: 10px;
             }
         }
-    
+
         .spotlight-commitment {
             margin: 20px;
-    
+
             .spotlight-section {
                 background: url('../images/spotlight.png');
                 background-repeat: no-repeat;
@@ -149,43 +270,44 @@ body {
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
+
                 .spotlight-top {
                     display: flex;
                     flex-direction: row;
-    
+
                     .spotlight-text {
                         color: #fff;
                         padding: 15px;
                         font-size: 12px;
                     }
-    
+
                     .read-more-spotlight {
                         padding: 20px;
                         justify-content: flex-end;
                         float: right;
                     }
                 }
-    
+
                 .spotlight-bottom {
                     .spotlight-bottom-content {
                         position: absolute;
                         bottom: 0%;
                         color: #fff;
                         margin: 10px;
-    
+
                         h4 {
                             color: #fff;
                         }
-    
+
                         p {
                             color: #B4B4B4;
                             font-size: 12px;
                         }
-    
+
                     }
                 }
             }
-    
+
             .commitment-section {
                 font-family: work-sans, sans-serif;
                 font-style: normal;
@@ -197,37 +319,37 @@ body {
                 border-radius: 10px;
                 background: #fff;
                 position: relative;
-    
+
                 .commitment-section-heading {
                     font-size: 24px;
                 }
-    
+
                 .commitment-section-body {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-    
+
                     .commitment-section-body-button {
                         margin: 30px;
                     }
-    
+
                     .commitment-section-body-list {
                         display: flex;
                         flex-direction: column;
-    
+
                         .commitment-section-body-list-item {
                             margin: 10px 10px 25px 10px;
                             justify-items: flex-start;
                             flex-wrap: wrap;
                             color: #4B5563;
-    
+
                         }
                     }
-    
+
                     .commitment-section-body-image {
                         display: flex;
                         justify-content: flex-end;
-    
+
                         img {
                             width: 221.95px;
                             height: 381.74px;
@@ -239,36 +361,36 @@ body {
                 }
             }
         }
-    
+
         .newsletter-section {
             margin: 20px;
-    
+
             .newsletter-container {
                 background: #fff;
-    
+
                 .newsletter-heading {
                     h4 {
                         font-size: 32px;
                         font-weight: 500;
                         padding-top: 30px;
                         margin: 0px;
-    
+
                     }
-    
+
                     p {
                         color: #4B5563;
                         font-size: 22px;
                     }
-    
+
                 }
-    
+
                 .newsletter-subscribe {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 30px;
-    
+
                     input {
                         width: 300px;
                         border-radius: 20px;
@@ -278,23 +400,23 @@ body {
                         margin-right: 10px;
                     }
                 }
-    
+
                 .commitment-section-body-list {
                     display: flex;
                     flex-direction: column;
-    
+
                     .commitment-section-body-list-item {
                         margin: 10px 10px 25px 10px;
                         justify-items: flex-start;
                         flex-wrap: wrap;
                         color: #4B5563;
-    
+
                     }
                 }
             }
-    
+
         }
     }
 }
 
-@media (max-width: 1200px) { }
+@media (max-width: 1200px) {}
