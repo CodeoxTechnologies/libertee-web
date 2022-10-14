@@ -18,9 +18,9 @@ const Commitment = () => {
                                 completely legal in India.
                             </li>
                         </ul>
-                        {/* <div className="commitment-section-body-button">
+                        <div className="commitment-section-body-button">
                             <button className="button-black">Read More</button>
-                        </div> */}
+                        </div> 
                         <div className="commitment-section-body-image">
                             <img src={women} alt="women" />
                         </div>
