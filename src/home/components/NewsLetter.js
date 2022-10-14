@@ -20,11 +20,10 @@ const NewsLetter = () => {
                     <div className="newsletter-flex">
                         Newsletters on sexual health
                         <Checkbox
-                            color="primary"
                             checked={sexEd}
                             onChange={(e) => setsexEd(e.target.checked)}
                             value={sexEd}
-                            style={{color:'rgb(177 176 176)'}}
+                            style={{color:'rgb(0 0 0)'}}
                         />
                     </div>
                 </Grid>
@@ -32,11 +31,10 @@ const NewsLetter = () => {
                     <div className="newsletter-flex">
                         Updates, offers and newsletters
                         <Checkbox
-                            color="primary"
                             checked={updates}
                             onChange={(e) => setUpdates(e.target.checked)}
                             value={updates}
-                            style={{color:'rgb(177 176 176)'}}
+                            style={{color:'rgb(0 0 0)'}}
                         />
                     </div>
                 </Grid>

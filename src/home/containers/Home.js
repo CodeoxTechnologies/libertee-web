@@ -14,24 +14,36 @@ class Home extends Component {
       <div className='home'>
         <Header />
         <Navigation />
-        <div>
-          <Grid container spacing={2} >
-            <Grid item md={6} lg={6} sm={12} xs={12}>
-              <SpotLight />
+        <div className='libertee-body'>
+          <div>
+            <Grid container spacing={2} >
+              <Grid item md={6} lg={6} sm={12} xs={12}>
+                <SpotLight />
+              </Grid>
+              <Grid item md={6} lg={6} sm={12} xs={12} className="commitment-desktop">
+                <Commitment />
+              </Grid>
             </Grid>
-            <Grid item md={6} lg={6} sm={12} xs={12} className="commitment-desktop">
-              <Commitment />
+          </div>
+          <div className='newsletter-section'>
+            <Grid container >
+              <Grid item md={12} xs={12} sm={12} lg={12} >
+                <NewsLetter />
+              </Grid>
             </Grid>
-          </Grid>
+          </div>
+          <div className='commitment-mobile'>
+            <Grid className='container'>
+              <Grid item xs={12}>
+                <Commitment />
+              </Grid>
+            </Grid>
+          </div>
         </div>
 
-        <div className='newsletter-section'>
-          <Grid container >
-            <Grid item md={12} xs={12} sm={12} lg={12} >
-              <NewsLetter />
-            </Grid>
-          </Grid>
-        </div>
+
+
+
         {/* 
         <div className='newsletter-section'>
           <Grid container >
