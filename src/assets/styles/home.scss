@@ -6,6 +6,7 @@ body {
     font-family: 'work-sans', sans-serif;
 }
 
+// mobile devices
 @media screen and (min-width: 250px) and (max-width: 768px) {
     .home {
 
@@ -281,6 +282,7 @@ body {
     }
 }
 
+//  tablets
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .home {
         .header {
@@ -322,8 +324,10 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width:1200px) {
     .home {
+        background: red;
+
         .header {
             font-family: 'montserrat', sans-serif;
             background: #fff;
@@ -542,4 +546,41 @@ body {
     }
 }
 
-@media (max-width: 1200px) {}
+@media (min-width: 1200px) {
+    .home {
+        .header {
+            font-family: 'montserrat', sans-serif;
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            .logo {
+                width: 90px;
+            }
+            .libertee {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+
+                .libertee-logo {
+                    width: 135px;
+                }
+            }
+            .navigation-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .shoppingcart {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
