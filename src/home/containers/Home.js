@@ -39,19 +39,15 @@ class Home extends Component {
               </Grid>
             </Grid>
           </div>
+          <div className='testimonial-section'>
+            <Grid container >
+              <Grid item md={12} xs={12} sm={12} lg={12} >
+                <Testimonial />
+              </Grid>
+            </Grid>
+          </div>
         </div>
 
-
-
-
-        {/* 
-        <div className='newsletter-section'>
-          <Grid container >
-            <Grid item md={12} xs={12} sm={12} lg={12} >
-              <Testimonial />
-            </Grid>
-          </Grid>
-        </div> */}
 
 
       </div>

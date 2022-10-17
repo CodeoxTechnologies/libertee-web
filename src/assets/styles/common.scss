@@ -6,6 +6,7 @@
     background: #000;
     border-radius: 20px;
     text-transform: uppercase;
+    border: none;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
@@ -14,12 +15,12 @@
 
 @media screen and (min-width: 250px) and (max-width: 768px) {
     .button-black {
-        padding: 5px;
+        padding: 6px 10px 6px 10px;
         font-size: 12px;
         font-weight: 400;
     }
     .button-white {
-        padding: 5px;
+        padding: 6px 10px 6px 10px;
         font-size: 10px;
         font-weight: 400;
     }

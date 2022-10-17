@@ -11,7 +11,7 @@ const Commitment = () => {
                     <Grid item xs={12} md={12} lg={12}>
                         <ul className="commitment-section-body-list">
                             <li className="commitment-section-body-list-item item-1">We guarantee you your privacy  every step of the way.</li>
-                            <li className="commitment-section-body-list-item item-2">We’re never be Obscene. We might try to be funny. But sexuality doesn’t
+                            <li className="commitment-section-body-list-item item-2"><span>We’re never be Obscene</span>. We might try to be funny. But sexuality doesn’t
                                 mean obscenity.
                             </li>
                             <li className="commitment-section-body-list-item item-3">Every product is designed, packed and marketed to ensure it is

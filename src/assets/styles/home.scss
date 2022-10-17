@@ -160,21 +160,30 @@ body {
                         line-height: 20px;
                         color: #4B5563;
                         padding: 20px;
+
                         .commitment-section-body-list-item {
                             justify-content: left;
                             line-height: 30px;
+
+                            span {
+                                text-decoration: underline;
+                            }
                         }
+
                         .item-1 {
                             width: 259px;
-                            
+
                         }
+
                         .item-2 {
                             width: 254px;
                         }
+
                         .item-3 {
                             width: 159px;
                         }
                     }
+
                     .commitment-section-body-image {
                         img {
                             height: 50%;
@@ -183,6 +192,7 @@ body {
                             right: -3%;
                         }
                     }
+
                     .commitment-section-body-button {
                         padding: 0px 20px 0px 20px;
                     }
@@ -221,6 +231,44 @@ body {
                     }
                 }
             }
+
+            .testimonial-section {
+                .testimonial-container {
+                    background: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin-top: 10px;
+
+                    .testimonial-heading {
+                        font-size: 18px;
+                        margin: 10px;
+
+                        h4 {
+                            margin: 0px;
+                        }
+
+                        .testimonial-question {
+                            color: #4B5563;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .testimonial-section-body-list {
+                        text-align: center;
+                        color: #4B5563;
+                        font-size: 11px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px;
+
+                        .testimonial-section-body-list-item {
+                            line-height: 20px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
         }
 
 
