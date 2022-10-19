@@ -18,23 +18,28 @@ const NewsLetter = () => {
             <Grid container >
                 <Grid item md={6} lg={6} sm={12} xs={12}>
                     <div className="newsletter-flex">
-                        Newsletters on sexual health
+                        <p>
+                            Newsletters on sexual health
+                        </p>
+
                         <Checkbox
                             checked={sexEd}
                             onChange={(e) => setsexEd(e.target.checked)}
                             value={sexEd}
-                            style={{color:'rgb(0 0 0)'}}
+                            style={{ color: 'rgb(0 0 0)' }}
                         />
                     </div>
                 </Grid>
                 <Grid item md={6} lg={6} sm={12} xs={12}>
                     <div className="newsletter-flex">
-                        Updates, offers and newsletters
+                        <p>
+                            Updates, offers and newsletters
+                        </p>
                         <Checkbox
                             checked={updates}
                             onChange={(e) => setUpdates(e.target.checked)}
                             value={updates}
-                            style={{color:'rgb(0 0 0)'}}
+                            style={{ color: 'rgb(0 0 0)' }}
                         />
                     </div>
                 </Grid>

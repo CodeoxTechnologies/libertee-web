@@ -26,7 +26,7 @@ const Testimonial = () => {
             </Grid>
             <Grid container align="center">
                 <Grid item md={12} xs={12} sm={12} lg={12}>
-                    <div className="newsletter-subscribe">
+                    <div className="testimonial-button">
                         <button className="button-black" >Talk to Us</button>
                     </div>
 
