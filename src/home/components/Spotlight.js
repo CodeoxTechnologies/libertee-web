@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { Paper } from '@mui/material';
 import spotlight from '../../assets/images/spotlight.png';
+import { isMobile  } from "react-device-detect";
 
 const SpotLight = () => {
     return (
@@ -14,7 +15,7 @@ const SpotLight = () => {
                 </Grid>
                 <Grid item md={6} xs={6} sm={6} >
                     <div className="read-more-spotlight">
-                        <button className="button-white button-small"> Read more </button>
+                        <button className={isMobile ? "button-white button-small" :  "button-white button-large"  } > Read more </button>
                     </div>
                 </Grid>
             </Grid>

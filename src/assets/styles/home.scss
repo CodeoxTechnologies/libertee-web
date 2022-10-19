@@ -382,9 +382,6 @@ body {
             }
         }
 
-        .spotlight-commitment {
-            margin: 20px;
-
             .spotlight-section {
                 background: url('../images/spotlight.png');
                 background-repeat: no-repeat;
@@ -487,7 +484,6 @@ body {
                     }
                 }
             }
-        }
 
         .newsletter-section {
             margin: 20px;
@@ -546,7 +542,7 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
     .home {
         .header {
             font-family: 'montserrat', sans-serif;
@@ -557,9 +553,11 @@ body {
             justify-content: space-between;
             align-items: center;
             height: 50px;
+
             .logo {
                 width: 90px;
             }
+
             .libertee {
                 display: flex;
                 flex-direction: column;
@@ -571,6 +569,7 @@ body {
                     width: 135px;
                 }
             }
+
             .navigation-icons {
                 display: flex;
                 flex-direction: row;
@@ -581,6 +580,141 @@ body {
                     padding: 15px;
                 }
             }
+        }
+
+        .navigation {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #fff;
+
+            span {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .libertee-body{
+            margin: 30px;
+            .spotlight-section {
+                background: url('../images/spotlight.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                .spotlight-top {
+                    display: flex;
+                    flex-direction: row;
+
+                    .spotlight-text {
+                        color: #fff;
+                        padding: 15px;
+                        font-size: 12px;
+                        font-weight: 300;
+                        letter-spacing: 3px;
+                    }
+
+                    .read-more-spotlight {
+                        padding: 20px;
+                        justify-content: flex-end;
+                        float: right;
+                    }
+                }
+
+                .spotlight-bottom {
+                    .spotlight-bottom-content {
+                        position: absolute;
+                        bottom: 0%;
+                        margin: 10px;
+
+                        .spotlight-title {
+                            color: #fff;
+                            font-weight: 400;
+                            font-size: 18px;
+                            margin: 0px;
+                        }
+
+                        p {
+                            color: #b1b1b1;
+                            font-size: 12px;
+                            margin-top: 3px;
+                        }
+
+                    }
+                }
+            }
+            .commitment-mobile { 
+                display: none;
+            }
+            .commitment-desktop {
+                .commitment-section {
+                    font-family: work-sans, sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 10px;
+                    background: #fff;
+                    position: relative;
+    
+                    .commitment-section-heading {
+                        font-size: 24px;
+                    }
+    
+                    .commitment-section-body {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+    
+                        .commitment-section-body-button {
+                            // margin: 30px;
+                        }
+    
+                        .commitment-section-body-list {
+                            display: flex;
+                            flex-direction: column;
+    
+                            .commitment-section-body-list-item {
+                                margin: 10px 10px 25px 10px;
+                                justify-items: flex-start;
+                                flex-wrap: wrap;
+                                color: #4B5563;
+    
+                            }
+                        }
+    
+                        .commitment-section-body-image {
+                            display: flex;
+                            justify-content: flex-end;
+    
+                            img {
+                                width: 221.95px;
+                                height: 381.74px;
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+
         }
     }
 }

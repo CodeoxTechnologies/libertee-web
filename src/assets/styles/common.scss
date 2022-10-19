@@ -25,6 +25,18 @@
         font-weight: 400;
     }
 }
+@media screen and (min-width : 992px) {
+    .button-black {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .button-white {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
 
 .button-white {
     display: flex;
