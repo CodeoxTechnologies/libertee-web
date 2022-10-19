@@ -682,12 +682,13 @@ body {
                         justify-content: space-between;
     
                         .commitment-section-body-button {
-                            // margin: 30px;
+                            margin: 30px;
                         }
     
                         .commitment-section-body-list {
                             display: flex;
                             flex-direction: column;
+                            font-size: 12px;
     
                             .commitment-section-body-list-item {
                                 margin: 10px 10px 25px 10px;
@@ -703,11 +704,11 @@ body {
                             justify-content: flex-end;
     
                             img {
-                                width: 221.95px;
-                                height: 381.74px;
+                                width: 200.95px;
+                                height: 324.74px;
                                 position: absolute;
                                 bottom: 0px;
-                                right: 0px;
+                                right: -2%;
                             }
                         }
                     }

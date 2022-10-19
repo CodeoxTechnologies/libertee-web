@@ -27,8 +27,6 @@ const Commitment = () => {
                         </div> 
                     </Grid>
                 </Grid>
-
-
             </div>
         </div>
     )
