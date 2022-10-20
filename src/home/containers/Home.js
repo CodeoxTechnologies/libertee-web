@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {  } from 'react';
 import { Grid } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 import Header from '../components/Header';
@@ -7,9 +7,11 @@ import SpotLight from '../components/Spotlight';
 import Commitment from '../components/Commitment';
 import NewsLetter from '../components/NewsLetter'
 import Testimonial from '../components/Testimonial';
+import { WindowSharp } from '@mui/icons-material';
 
-class Home extends Component {
-  render() {
+const Home = () =>  {
+  const { innerWidth: width, innerHeight: height } = window;
+  console.log('window', window)
     return (
       <div className='home'>
         <Header />
@@ -17,10 +19,10 @@ class Home extends Component {
         <div className='libertee-body'>
           <div>
             <Grid container spacing={2} >
-              <Grid item md={6} lg={6} sm={12} xs={12}>
+              <Grid item md={window.innerWidth < 1200 ? 12 : 6} lg={6} sm={12} xs={12}>
                 <SpotLight />
               </Grid>
-              <Grid item md={6} lg={6} sm={12} xs={12} className="commitment-desktop">
+              <Grid item md={window.innerWidth < 1200 ? 12 : 6} lg={6} sm={12} xs={12} className="commitment-desktop">
                 <Commitment />
               </Grid>
             </Grid>
@@ -53,6 +55,5 @@ class Home extends Component {
       </div>
     );
   }
-}
 
 export default Home;

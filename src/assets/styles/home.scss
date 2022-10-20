@@ -324,10 +324,9 @@ body {
     }
 }
 
+// small desktop
 @media screen and (min-width: 992px) and (max-width:1200px) {
     .home {
-        background: red;
-
         .header {
             font-family: 'montserrat', sans-serif;
             background: #fff;
@@ -383,6 +382,8 @@ body {
         }
 
         .libertee-body {
+            margin: 30px;
+
             .spotlight-section {
                 background: url('../images/spotlight.png');
                 background-repeat: no-repeat;
@@ -393,17 +394,19 @@ body {
                 justify-content: space-between;
                 align-items: flex-start;
                 width: 100%;
-                height: 100%;
+                height: 560px;
                 border-radius: 10px;
 
                 .spotlight-top {
                     display: flex;
                     flex-direction: row;
 
+
                     .spotlight-text {
                         color: #fff;
                         padding: 15px;
                         font-size: 12px;
+                        letter-spacing: 4px;
                     }
 
                     .read-more-spotlight {
@@ -432,60 +435,64 @@ body {
                     }
                 }
             }
-
-            .commitment-section {
-                font-family: work-sans, sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                height: 435px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 10px;
-                background: #fff;
-                position: relative;
-
-                .commitment-section-heading {
-                    font-size: 24px;
-                }
-
-                .commitment-section-body {
+            .commitment-mobile {
+                display: none;
+            }
+            .commitment-desktop {
+                .commitment-section {
+                    font-family: work-sans, sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    width: 100%;
+                    height: 100%;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 10px;
+                    background: #fff;
+                    position: relative;
 
-                    .commitment-section-body-button {
-                        margin: 30px;
+                    .commitment-section-heading {
+                        font-size: 24px;
                     }
 
-                    .commitment-section-body-list {
+                    .commitment-section-body {
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        justify-content: space-between;
 
-                        .commitment-section-body-list-item {
-                            margin: 10px 10px 25px 10px;
-                            justify-items: flex-start;
-                            flex-wrap: wrap;
-                            color: #4B5563;
-
+                        .commitment-section-body-button {
+                            margin: 30px;
                         }
-                    }
 
-                    .commitment-section-body-image {
-                        display: flex;
-                        justify-content: flex-end;
+                        .commitment-section-body-list {
+                            display: flex;
+                            flex-direction: column;
 
-                        img {
-                            width: 221.95px;
-                            height: 381.74px;
-                            position: absolute;
-                            bottom: 0px;
-                            right: 0px;
+                            .commitment-section-body-list-item {
+                                margin: 10px 10px 25px 10px;
+                                justify-items: flex-start;
+                                flex-wrap: wrap;
+                                color: #4B5563;
+
+                            }
+                        }
+
+                        .commitment-section-body-image {
+                            display: flex;
+                            justify-content: flex-end;
+
+                            img {
+                                width: 221.95px;
+                                height: 381.74px;
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0px;
+                            }
                         }
                     }
                 }
             }
-
             .newsletter-section {
                 margin-top: 10px;
 
@@ -498,7 +505,6 @@ body {
                             font-weight: 500;
                             padding-top: 30px;
                             margin: 0px;
-
                         }
 
                         p {
@@ -506,6 +512,12 @@ body {
                             font-size: 22px;
                         }
 
+                    }
+
+                    .newsletter-flex {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
                     }
 
                     .newsletter-subscribe {
@@ -539,6 +551,41 @@ body {
                     }
                 }
 
+            }
+            .testimonial-section {
+                margin-top: 20px;
+
+                .testimonial-container {
+                    background: #fff;
+                    border-radius: 10px;
+
+                    .testimonial-heading {
+
+                        // padding-top: 10px;
+                        h4 {
+                            font-size: 32px;
+                            font-weight: 500;
+                            padding-top: 30px;
+                            margin: 0px;
+                        }
+
+                        p {
+                            color: #4B5563;
+                            font-size: 22px;
+                        }
+                    }
+
+                    .testimonial-section-body-list {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .testimonial-button {
+                        margin: 15px;
+                    }
+                }
             }
         }
 
@@ -805,6 +852,7 @@ body {
                         justify-content: center;
                         align-items: center;
                     }
+
                     .testimonial-button {
                         margin: 15px;
                     }
@@ -816,6 +864,7 @@ body {
         }
     }
 }
+
 @media screen and (min-width: 1400px) {
     .home {
         .header {
@@ -1071,6 +1120,7 @@ body {
                         justify-content: center;
                         align-items: center;
                     }
+
                     .testimonial-button {
                         margin: 15px;
                     }
