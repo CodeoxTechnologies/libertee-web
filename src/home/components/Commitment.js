@@ -1,7 +1,6 @@
 import React from "react";
 import women from '../../assets/images/women.png'
 import { Grid } from "@mui/material";
-import { isMobile } from "react-device-detect";
 
 const Commitment = () => {
     return (
@@ -9,7 +8,7 @@ const Commitment = () => {
             <h4 className="commitment-section-heading" ><strong>Our Commitment</strong></h4>
             <div className="commitment-section-body">
                 <Grid container>
-                    <Grid item xs={12} md={9} lg={9}>
+                    <Grid item xs={12} sm={9} md={9} lg={9}>
                         <ul className="commitment-section-body-list">
                             <li className="commitment-section-body-list-item item-1">We guarantee you your privacy  every step of the way.</li>
                             <li className="commitment-section-body-list-item item-2"><span>We’re never be Obscene</span>. We might try to be funny. But sexuality doesn’t

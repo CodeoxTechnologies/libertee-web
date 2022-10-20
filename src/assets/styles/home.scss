@@ -354,7 +354,7 @@ body {
                 justify-content: space-between;
                 align-items: flex-start;
                 width: 100%;
-                height: 180px;
+                height: 460px;
                 border-radius: 10px;
 
                 .spotlight-top {
@@ -408,63 +408,56 @@ body {
                 margin-top: 20px;
 
                 .commitment-section {
-                    background: #fff;
-                    border-radius: 10px;
-                    padding: 10px;
-                    height: 445px;
-                    font-family: 'work-sans';
+                    font-family: work-sans, sans-serif;
                     font-style: normal;
                     font-weight: 400;
+                    width: 100%;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    border-radius: 10px;
+                    background: #fff;
                     position: relative;
 
                     .commitment-section-heading {
-                        font-size: 18px;
-                        font-weight: 600;
+                        font-size: 24px;
                     }
 
-                    .commitment-section-body-list {
-                        font-size: 11px;
-                        line-height: 20px;
-                        color: #4B5563;
-                        padding: 20px;
+                    .commitment-section-body {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
 
-                        .commitment-section-body-list-item {
-                            justify-content: left;
-                            line-height: 30px;
+                        .commitment-section-body-button {
+                            margin: 30px;
+                        }
 
-                            span {
-                                text-decoration: underline;
+                        .commitment-section-body-list {
+                            display: flex;
+                            flex-direction: column;
+
+                            .commitment-section-body-list-item {
+                                margin: 10px 10px 25px 10px;
+                                justify-items: flex-start;
+                                flex-wrap: wrap;
+                                color: #4B5563;
+
                             }
                         }
 
-                        .item-1 {
-                            width: 259px;
+                        .commitment-section-body-image {
+                            display: flex;
+                            justify-content: flex-end;
 
+                            img {
+                                width: 221.95px;
+                                height: 381.74px;
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0px;
+                            }
                         }
-
-                        .item-2 {
-                            width: 254px;
-                        }
-
-                        .item-3 {
-                            width: 159px;
-                        }
-                    }
-
-                    .commitment-section-body-image {
-                        img {
-                            height: 50%;
-                            position: absolute;
-                            bottom: 0px;
-                            right: -3%;
-                        }
-                    }
-
-                    .commitment-section-body-button {
-                        padding: 0px 20px 0px 20px;
                     }
                 }
             }
