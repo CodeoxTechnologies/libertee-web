@@ -320,6 +320,228 @@ body {
             }
 
         }
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #fff;
+
+            span {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+        .libertee-body {
+            margin: 20px;
+
+            .spotlight-section {
+                margin-top: 20px;
+                font-family: 'work-sans', sans-serif;
+                font-style: normal;
+                background: url('../images/spotlight.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                height: 180px;
+                border-radius: 10px;
+
+                .spotlight-top {
+                    display: flex;
+                    flex-direction: row;
+
+                    .spotlight-text {
+                        color: #fff;
+                        padding: 15px;
+                        font-size: 12px;
+                    }
+
+                    .read-more-spotlight {
+                        padding: 10px;
+                        justify-content: flex-end;
+                        float: right;
+                        margin: 10px;
+                    }
+                }
+
+                .spotlight-bottom {
+                    .spotlight-bottom-content {
+                        position: absolute;
+                        bottom: 0%;
+                        color: #fff;
+                        margin: 10px;
+
+                        .spotlight-title {
+                            color: #fff;
+                            margin: 0px;
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+
+                        .spotlight-description {
+                            color: #B4B4B4;
+                            font-size: 10px;
+                        }
+
+                    }
+                }
+            }
+
+            // commitment desktop
+            .commitment-desktop {
+                display: none;
+            }
+
+            // commitment mobile
+            .commitment-mobile {
+                margin-top: 20px;
+
+                .commitment-section {
+                    background: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                    height: 445px;
+                    font-family: 'work-sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+
+                    .commitment-section-heading {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .commitment-section-body-list {
+                        font-size: 11px;
+                        line-height: 20px;
+                        color: #4B5563;
+                        padding: 20px;
+
+                        .commitment-section-body-list-item {
+                            justify-content: left;
+                            line-height: 30px;
+
+                            span {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .item-1 {
+                            width: 259px;
+
+                        }
+
+                        .item-2 {
+                            width: 254px;
+                        }
+
+                        .item-3 {
+                            width: 159px;
+                        }
+                    }
+
+                    .commitment-section-body-image {
+                        img {
+                            height: 50%;
+                            position: absolute;
+                            bottom: 0px;
+                            right: -3%;
+                        }
+                    }
+
+                    .commitment-section-body-button {
+                        padding: 0px 20px 0px 20px;
+                    }
+                }
+            }
+
+            // newsletter
+            .newsletter-container {
+                background: #fff;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 10px;
+
+                .newsletter-flex {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .newsletter-subscribe {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    input {
+                        width: 70%;
+                        border-radius: 20px;
+                        padding: 8px;
+                        border: none;
+                        background: #F2F2F2;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .testimonial-section {
+                .testimonial-container {
+                    background: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin-top: 10px;
+
+                    .testimonial-heading {
+                        font-size: 18px;
+                        margin: 10px;
+
+                        h4 {
+                            margin: 0px;
+                        }
+
+                        .testimonial-question {
+                            color: #4B5563;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .testimonial-section-body-list {
+                        text-align: center;
+                        color: #4B5563;
+                        font-size: 11px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px;
+
+                        .testimonial-section-body-list-item {
+                            line-height: 20px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        
 
     }
 }
