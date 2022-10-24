@@ -1,17 +1,31 @@
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Routes } from 'react-router-dom';
 import Home from './home/containers/Home';
 import Learn from './learn/containers/Learn';
+import { Navigation, Header } from './shared';
 import './assets/styles/home.scss';
 import './assets/styles/common.scss';
-
+import './assets/styles/shared.scss';
+import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className='app'>
-        <Home />
-      </div>
+      <Router>
+        <div className='app'>
+          <Header />
+          <Navigation />
+          <Switch>
+            <Route exact={true} path="/">
+              <Home />
+            </Route>
+            <Route exact={true} path="/learn">
+              <Learn />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+
     );
   }
 }

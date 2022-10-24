@@ -1,10 +1,8 @@
 import React from "react";
 import logo from '../../assets/images/logo.png';
 import libertee from '../../assets/images/libertee.png';
-import shoppingcart from '../../assets/images/shopping_cart.png'
-import person from '../../assets/images/person.png';
-import PersonIcon from '@mui/icons-material/Person';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { UserSidebar } from "../../shared";
 
 const Header = () => {
     return (
@@ -21,7 +19,7 @@ const Header = () => {
             <div>
                 <div className="navigation-icons">
                     <AddShoppingCartIcon  className="shoppingcart" />
-                    <PersonIcon   className="person"  />
+                    <UserSidebar />
                 </div>
             </div>
         </div>

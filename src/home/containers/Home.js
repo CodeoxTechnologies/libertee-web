@@ -1,21 +1,14 @@
 import React, {  } from 'react';
 import { Grid } from '@mui/material';
-import { isMobile } from 'react-device-detect';
-import Header from '../components/Header';
-import Navigation from '../components/Navigation';
 import SpotLight from '../components/Spotlight';
 import Commitment from '../components/Commitment';
 import NewsLetter from '../components/NewsLetter'
 import Testimonial from '../components/Testimonial';
-import { WindowSharp } from '@mui/icons-material';
 
 const Home = () =>  {
-  const { innerWidth: width, innerHeight: height } = window;
   console.log('window', window)
     return (
       <div className='home'>
-        <Header />
-        <Navigation />
         <div className='libertee-body'>
           <div>
             <Grid container spacing={2} >
