@@ -6,8 +6,11 @@ import { Navigation, Header } from './shared';
 import './assets/styles/home.scss';
 import './assets/styles/common.scss';
 import './assets/styles/shared.scss';
+import './assets/styles/profile.scss';
 import './App.scss';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Profile from './profile/containers/Profile';
 class App extends Component {
   render() {
     return (
@@ -21,6 +24,9 @@ class App extends Component {
             </Route>
             <Route exact={true} path="/learn">
               <Learn />
+            </Route>
+            <Route exact={true} path="/profile">
+              <Profile />
             </Route>
           </Switch>
         </div>

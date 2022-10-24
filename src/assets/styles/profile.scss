@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://use.typekit.net/gak5scy.css");
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .profile-content-avatar {
+            width: 200px;
+            height: 200px;
+        }
+        .profile-content-name {
+            font-family: 'work-sans', sans-serif;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+    }
+    .profile-list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left ;
+        .profile-list-comp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .label {
+                font-weight: bold;
+            }
+            .value {
+                font-weight:lighter;
+                color: #4B5563;
+            }
+        }
+        .border-white {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+}
