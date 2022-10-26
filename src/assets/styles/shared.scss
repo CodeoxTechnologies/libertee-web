@@ -13,4 +13,12 @@
     border-bottom: 1px solid #F2F2F2;
     padding: 10px;
     cursor: pointer;
+    a {
+        text-decoration: none;
+        color: black;
+       
+    }
+    a:hover {
+        color: #3f51b5;
+    }
 }

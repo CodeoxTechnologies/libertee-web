@@ -50,6 +50,9 @@ body {
       margin: 30px;
       font-size: 14px;
       border-bottom: 1px solid #fff;
+      a {
+        text-decoration: none;
+      }
 
       span {
         display: flex;
