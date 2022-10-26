@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/libertee-web/static/css/main.03a5050d.css",
-    "main.js": "/libertee-web/static/js/main.2ce459ee.js",
+    "main.js": "/libertee-web/static/js/main.b2fb8eb0.js",
     "static/media/spotlight.png": "/libertee-web/static/media/spotlight.c5bb6d206343355c831a.png",
     "static/media/logo.png": "/libertee-web/static/media/logo.8e337e6c062683e551d4.png",
     "static/media/women.png": "/libertee-web/static/media/women.bff6c3e18e19a8d8e097.png",
     "static/media/libertee.png": "/libertee-web/static/media/libertee.9ee14225b79781eca18a.png",
     "index.html": "/libertee-web/index.html",
     "main.03a5050d.css.map": "/libertee-web/static/css/main.03a5050d.css.map",
-    "main.2ce459ee.js.map": "/libertee-web/static/js/main.2ce459ee.js.map"
+    "main.b2fb8eb0.js.map": "/libertee-web/static/js/main.b2fb8eb0.js.map"
   },
   "entrypoints": [
     "static/css/main.03a5050d.css",
-    "static/js/main.2ce459ee.js"
+    "static/js/main.b2fb8eb0.js"
   ]
 }
