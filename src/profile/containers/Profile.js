@@ -23,7 +23,7 @@ const Profile = () => {
                             <div className="profile-list-comp">
                                 <div>
                                     <p className="label">Password</p>
-                                    <p className="value">*********</p>
+                                    <p className="value">**********</p>
                                 </div>
                                 <div>
                                     <a className="value">Change</a>
