@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.87e8a191.css",
-    "main.js": "/static/js/main.636a6b57.js",
-    "static/media/spotlight.png": "/static/media/spotlight.c5bb6d206343355c831a.png",
-    "static/media/logo.png": "/static/media/logo.8e337e6c062683e551d4.png",
-    "static/media/women.png": "/static/media/women.bff6c3e18e19a8d8e097.png",
-    "static/media/libertee.png": "/static/media/libertee.9ee14225b79781eca18a.png",
-    "index.html": "/index.html",
-    "main.87e8a191.css.map": "/static/css/main.87e8a191.css.map",
-    "main.636a6b57.js.map": "/static/js/main.636a6b57.js.map"
+    "main.css": "/libertee-web/static/css/main.03a5050d.css",
+    "main.js": "/libertee-web/static/js/main.2ce459ee.js",
+    "static/media/spotlight.png": "/libertee-web/static/media/spotlight.c5bb6d206343355c831a.png",
+    "static/media/logo.png": "/libertee-web/static/media/logo.8e337e6c062683e551d4.png",
+    "static/media/women.png": "/libertee-web/static/media/women.bff6c3e18e19a8d8e097.png",
+    "static/media/libertee.png": "/libertee-web/static/media/libertee.9ee14225b79781eca18a.png",
+    "index.html": "/libertee-web/index.html",
+    "main.03a5050d.css.map": "/libertee-web/static/css/main.03a5050d.css.map",
+    "main.2ce459ee.js.map": "/libertee-web/static/js/main.2ce459ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.87e8a191.css",
-    "static/js/main.636a6b57.js"
+    "static/css/main.03a5050d.css",
+    "static/js/main.2ce459ee.js"
   ]
 }
