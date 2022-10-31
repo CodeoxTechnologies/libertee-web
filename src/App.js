@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Home from './home/containers/Home';
 import Learn from './learn/containers/Learn';
 import { Navigation, Header } from './shared';
@@ -8,10 +9,13 @@ import './assets/styles/common.scss';
 import './assets/styles/shared.scss';
 import './assets/styles/profile.scss';
 import './App.scss';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Profile from './profile/containers/Profile';
 class App extends Component {
+  constructor(props){
+    super(props)
+
+  }
   render() {
     return (
       <Router>
@@ -31,7 +35,6 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
-
     );
   }
 }
