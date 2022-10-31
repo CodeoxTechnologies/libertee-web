@@ -8,9 +8,11 @@ import './assets/styles/home.scss';
 import './assets/styles/common.scss';
 import './assets/styles/shared.scss';
 import './assets/styles/profile.scss';
+import './assets/styles/products-list.scss';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Profile from './profile/containers/Profile';
+import Products from './Products/containers/Products';
 class App extends Component {
   constructor(props){
     super(props)
@@ -28,6 +30,9 @@ class App extends Component {
             </Route>
             <Route exact={true} path="/learn">
               <Learn />
+            </Route>
+            <Route exact={true} path="/products">
+              <Products />
             </Route>
             <Route exact={true} path="/profile">
               <Profile />
