@@ -28,7 +28,7 @@
 
             .dildo-question {
                 p {
-                    font-size: 36px;
+                    font-size: 32px;
                     font-weight: 600;
                 }
 
@@ -41,9 +41,59 @@
                 }
             }
         }
+
         .products-list-border {
             margin: 30px 0px;
             border: 1px solid #fff;
+        }
+
+        .product-list-swiper {
+            .product-card {
+                padding: 20px;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+
+                .product-card-top {
+                    justify-content: flex-start;
+                    .product-card-name {
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin: 0px;
+                    }
+                    .product-card-price {
+                        font-size: 28px;
+                        font-weight: 600;
+                        margin: 0px;
+                    }
+                }
+                .product-card-image {
+                    margin: 10px 0px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+                .product-card-dot {
+                    margin: 20px 0px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .product-card-button {
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
         }
 
     }

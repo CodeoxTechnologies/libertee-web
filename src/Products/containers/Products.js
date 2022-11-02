@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProductTriple } from '../components.js';
+import { ProductList, ProductTriple,  } from '../components.js';
 import { Grid } from '@material-ui/core';
 
 const Products = () => {
@@ -10,11 +10,14 @@ const Products = () => {
                     <p>Vibrators & Massagers</p>
                 </div>
                 <Grid container spacing={2} >
-                    <Grid item md={6}>
+                    <Grid item md={8}>
                         <ProductTriple />
                     </Grid>
                 </Grid>
                 <div className="products-list-border" ></div>
+                <div className='product-list-swiper'>
+                    <ProductList />
+                </div>
             </div>
 
         </div>
