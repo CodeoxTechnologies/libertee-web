@@ -92,6 +92,30 @@
                     justify-content: center;
                     align-items: center;
                 }
+                .product-card-bottom {
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .product-card-features {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0px 10px;
+                        .product-card-feature {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            .product-card-feature-icon {
+                                width: 50px;
+                            }
+                            .product-card-feature-name {
+                                
+                            } 
+                        }
+                    }
+                }
 
             }
         }

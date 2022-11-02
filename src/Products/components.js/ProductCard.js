@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
             <div className="product-card-dot">
                 <div className="product-card-dot-color">
                     {
-                        product.color.map((color, index) => 
+                        product.color.map((color, index) =>
                             <FiberManualRecordRoundedIcon style={{ color: color.color }} />
                         )
                     }
@@ -24,6 +24,18 @@ const ProductCard = ({ product }) => {
             </div>
             <div className="product-card-button">
                 <button className="button-black">Add to Cart</button>
+            </div>
+            <div className="product-card-bottom">
+                <div className="product-card-features">
+                    {
+                        product.features.map((feature, index) =>
+                            <div className="product-card-feature">
+                                <img src={feature.image} className="product-card-feature-icon" />
+                                <p className="product-card-feature-name" >{feature.name}</p>
+                            </div>
+                        )
+                    }
+                </div>
             </div>
 
         </Paper>
