@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ProductTriple } from '../components.js';
-import { Grid } from '@mui/material';
+import { Grid } from '@material-ui/core';
 
 const Products = () => {
     return (
@@ -13,9 +13,10 @@ const Products = () => {
                     <Grid item md={6}>
                         <ProductTriple />
                     </Grid>
-
                 </Grid>
+                <div className="products-list-border" ></div>
             </div>
+
         </div>
     )
 }
