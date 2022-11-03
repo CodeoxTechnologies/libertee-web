@@ -11,7 +11,7 @@ const ProductList = () => {
     const [slidesPerView, setSlidesPerView] = useState(4);
     useEffect = () => {
         if (window.innerWidth <= 768) {
-            setSlidesPerView(1)
+            setSlidesPerView(1.5)
         }
         else if (window.innerWidth <= 1024) {
             setSlidesPerView(2)

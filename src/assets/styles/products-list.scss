@@ -103,15 +103,18 @@
                         flex-direction: column;
                         justify-content: center;
                         margin: 0px 10px;
+                        width: 70%;
                         .product-card-feature {
                             display: flex;
                             flex-direction: row;
                             justify-content: space-around;
+                            align-items: center;
+                            
                             .product-card-feature-icon {
                                 width: 50px;
                             }
                             .product-card-feature-name {
-                                
+                                width: 100px;
                             } 
                         }
                     }
