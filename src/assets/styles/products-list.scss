@@ -129,6 +129,16 @@
 
             }
         }
+        .quiz-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            .quiz-icon {
+                font-size: 34px;
+            }
+        }
 
         
     }
@@ -179,6 +189,7 @@
                         .product-card-image {
                             margin: 10px 0px;
                             height: 200px;
+                            
                             display: flex;
                             justify-content: center;
                             align-items: center;
