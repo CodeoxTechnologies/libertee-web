@@ -25,7 +25,7 @@ class App extends Component {
           <Header />
           <Navigation />
           <Switch>
-            <Route exact={true} path="/">
+            <Route exact={true} path="/libertee-web">
               <Home />
             </Route>
             <Route exact={true} path="/learn">
