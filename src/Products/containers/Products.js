@@ -9,8 +9,8 @@ const Products = () => {
                 <div className='products-list-heading'>
                     <p>Vibrators & Massagers</p>
                 </div>
-                <Grid container spacing={2} >
-                    <Grid item md={8}>
+                <Grid container  >
+                    <Grid item md={8} xs={12} sm={12} lg={8}>
                         <ProductTriple />
                     </Grid>
                 </Grid>
