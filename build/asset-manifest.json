@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.46c47c3e.css",
-    "main.js": "/static/js/main.1763f192.js",
+    "main.css": "/static/css/main.ec6dcb88.css",
+    "main.js": "/static/js/main.153f15c0.js",
     "static/media/spotlight.png": "/static/media/spotlight.c5bb6d206343355c831a.png",
+    "static/media/le-wand-massager-18.png": "/static/media/le-wand-massager-18.ca0b9011f09e6f77afd0.png",
     "static/media/logo.png": "/static/media/logo.8e337e6c062683e551d4.png",
+    "static/media/Tracys-Dog-22.jpg": "/static/media/Tracys-Dog-22.0406c9810669221dd947.jpg",
     "static/media/women.png": "/static/media/women.bff6c3e18e19a8d8e097.png",
     "static/media/libertee.png": "/static/media/libertee.9ee14225b79781eca18a.png",
     "static/media/dildo.png": "/static/media/dildo.c54185ff329d2fda35a0.png",
     "index.html": "/index.html",
-    "main.46c47c3e.css.map": "/static/css/main.46c47c3e.css.map",
-    "main.1763f192.js.map": "/static/js/main.1763f192.js.map"
+    "main.ec6dcb88.css.map": "/static/css/main.ec6dcb88.css.map",
+    "main.153f15c0.js.map": "/static/js/main.153f15c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.46c47c3e.css",
-    "static/js/main.1763f192.js"
+    "static/css/main.ec6dcb88.css",
+    "static/js/main.153f15c0.js"
   ]
 }
