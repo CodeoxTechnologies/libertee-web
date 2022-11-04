@@ -7,7 +7,6 @@
             font-family: 'work-sans', sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: 34px;
         }
 
         .triple-dildo {
@@ -26,12 +25,10 @@
 
             .dildo-question {
                 p {
-                    font-size: 32px;
                     font-weight: 600;
                 }
 
                 span {
-                    font-size: 24px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -56,13 +53,11 @@
                     justify-content: flex-start;
 
                     .product-card-name {
-                        font-size: 24px;
                         font-weight: 400;
                         margin: 0px;
                     }
 
                     .product-card-price {
-                        font-size: 28px;
                         font-weight: 600;
                         margin: 0px;
                     }
@@ -293,10 +288,106 @@
             }
         }
     }
-    @media screen and (min-width: 1200px){
-        
+    @media screen and (min-width: 1200px) and (max-width: 1400px){
+        .products-list-body {
+            margin:30px;
+            .products-list-heading {
+                font-size: 34px;
+            }
+            .triple-dildo {    
+                .dildo-question {
+                    p {
+                        font-size: 32px;
+                    }
+    
+                    span {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .product-list-swiper {
+                .product-card {    
+                    .product-card-top {
+                        .product-card-name {
+                            font-size: 24px;
+                        }
+                        .product-card-price {
+                            font-size: 28px;
+                        }
+                    }
+                    .product-card-image {
+                        height: 300px;
+                        img {
+                            width: 60%;
+                        }
+                    }
+                    .product-card-bottom {
+                        .product-card-features {
+                            width: 70%;
+                            .product-card-feature {
+                                .product-card-feature-icon {
+                                    width: 30px;
+                                }
+                                .product-card-feature-name {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
     }
     @media screen and (min-width: 1400px){
-        
+        .products-list-body {
+            margin: 30px;
+            .products-list-heading {
+                font-size: 34px;
+            }
+            .triple-dildo {
+                .dildo-question {
+                    p {
+                        font-size: 32px;
+                    }
+    
+                    span {
+                        font-size: 24px;
+                    }   
+                }
+            }
+            .product-list-swiper {
+                .product-card {    
+                    .product-card-top {
+                        .product-card-name {
+                            font-size: 24px;
+                        }
+                        .product-card-price {
+                            font-size: 28px;
+                        }
+                    }
+                    .product-card-image {
+                        height: 300px;
+                        img {
+                            width: 60%;
+                        }
+                    }
+                    .product-card-bottom {
+                        .product-card-features {
+                            width: 70%;
+                            .product-card-feature {
+                                .product-card-feature-icon {
+                                    width: 30px;
+                                }
+                                .product-card-feature-name {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
     }
 }
