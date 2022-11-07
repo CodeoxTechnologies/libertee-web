@@ -1,50 +1,53 @@
 import React, { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import ProductCard from "./ProductCard";
 import { productsList } from "..";
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 import "swiper/css/navigation";
 const ProductList = () => {
-    const [products, setProducts] = useState(productsList)
-    const [slidesPerView, setSlidesPerView] = useState(4);
-    const [ navigationFlag, setNavigationFlag] = useState(false)
-    useEffect = () => {
-        if (window.innerWidth <= 768) {
-            setSlidesPerView(1.5)
-            setNavigationFlag(false)
-        }
-        else if (window.innerWidth <= 1024) {
-            setSlidesPerView(2)
-            setNavigationFlag(true)
-        }
-        else if (window.innerWidth <= 1280) {
-            setSlidesPerView(3)
-            setNavigationFlag(true)
-        }
-        else {
-            setSlidesPerView(4)
-            setNavigationFlag(true)
-        }
-    }
-    return (
-        <Swiper
-            spaceBetween={40}
-            slidesPerView={slidesPerView}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation={navigationFlag}
-            modules={[Navigation]}
-        >
-            {
-                products.map((product, index) =>
-                    <SwiperSlide key={index} >
-                        <ProductCard product={product} />
-                    </SwiperSlide>
-                )
-            }
-        </Swiper>
-    )
-}
+  const [products] = useState(productsList);
+  const [dimensions, setDimensions] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const handleResize = () => {
+    console.log("handleResize", window.innerWidth);
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
+  console.log("width", dimensions);
+  return (
+    <Swiper
+      modules={[Navigation]}
+      spaceBetween={50}
+      slidesPerView={
+        dimensions.width <= 768
+          ? 1.5
+          : dimensions.width <= 1024
+          ? 2
+          : dimensions.width <= 1200
+          ? 3
+          : 4
+      }
+      navigation={dimensions.width <= 768 ? false : true}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      {products.map((product, index) => (
+        <SwiperSlide key={index}>
+          <ProductCard product={product} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
 export default ProductList;
