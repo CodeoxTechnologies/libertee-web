@@ -1,27 +1,22 @@
-
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import Home from './home/containers/Home';
-import Learn from './learn/containers/Learn';
-import { Navigation, Header } from './shared';
-import './assets/styles/home.scss';
-import './assets/styles/common.scss';
-import './assets/styles/shared.scss';
-import './assets/styles/profile.scss';
-import './assets/styles/products-list.scss';
-import './App.scss';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Profile from './profile/containers/Profile';
-import Products from './Products/containers/Products';
+import React, { Component } from "react";
+import Home from "./home/containers/Home";
+import Learn from "./learn/containers/Learn";
+import { Navigation, Header } from "./shared";
+import "./assets/styles/home.scss";
+import "./assets/styles/common.scss";
+import "./assets/styles/shared.scss";
+import "./assets/styles/profile.scss";
+import "./assets/styles/products-list.scss";
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from "./profile/containers/Profile";
+import Products from "./Products/containers/Products";
+import Product from "./Products/containers/Product";
 class App extends Component {
-  constructor(props){
-    super(props)
-
-  }
   render() {
     return (
       <Router>
-        <div className='app'>
+        <div className="app">
           <Header />
           <Navigation />
           <Switch>
@@ -33,6 +28,9 @@ class App extends Component {
             </Route>
             <Route exact={true} path="/products">
               <Products />
+            </Route>
+            <Route exact={true} path="/product/:name">
+              <Product />
             </Route>
             <Route exact={true} path="/profile">
               <Profile />
