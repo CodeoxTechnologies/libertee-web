@@ -12,7 +12,7 @@ export const productsList = [
     image: prodImage1,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -29,7 +29,7 @@ export const productsList = [
     image: prodImage3,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -46,7 +46,7 @@ export const productsList = [
     image: prodImage2,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -63,7 +63,7 @@ export const productsList = [
     image: prodImage1,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -80,7 +80,7 @@ export const productsList = [
     image: prodImage2,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -97,7 +97,7 @@ export const productsList = [
     image: prodImage3,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -114,7 +114,7 @@ export const productsList = [
     image: prodImage1,
     color: [
       { color: "#FF005C", active: true },
-      { color: "#5F008", active: false },
+      { color: "#5F0081", active: false },
       { color: "#0060D1", active: false },
     ],
     activeColor: "#FF005C",
@@ -125,3 +125,19 @@ export const productsList = [
     ],
   },
 ];
+
+export const productDetail = {
+  name: "Rabbit Vibrator",
+  price: 2899,
+  image: prodImage2,
+  color: [
+    { color: "#FF005C", active: true },
+    { color: "#5F0081", active: false },
+    { color: "#0060D1", active: false },
+  ],
+  features: [
+    { name: "Waterproof", image: waterProof },
+    { name: "5 patterns 5 intensities", image: soundWave },
+    { name: "medical grade silicone", image: medical },
+  ],
+};

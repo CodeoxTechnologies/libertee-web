@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://use.typekit.net/gak5scy.css");
+
+.product-detail-section {
+  margin: 30px;
+  .product-detail-body {
+    margin: 30px;
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      .product-card-top {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        .product-card-top-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 26px;
+          font-weight: 400;
+          margin: 0px;
+        }
+        .product-card-top-price {
+          font-family: "Montserrat", sans-serif;
+          font-size: 30px;
+          font-weight: 600;
+          margin: 0px;
+        }
+      }
+      .product-card-middle {
+        margin: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+      .product-card-dot {
+        margin: 20px;
+      }
+      .product-card-bottom {
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .product-card-features {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .product-card-feature-item {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .product-card-feature-item-name {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+    .product-detail-description {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      .product-detail-description-top {
+        .product-detail-description-top-title {
+          font-size: 46px;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+          margin: 0px;
+        }
+        .product-detail-description-top-price {
+          font-size: 32px;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+      .product-detail-description-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 42px;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: flex-start;
+        p {
+          margin: 0px;
+        }
+      }
+      .product-detail-description-rating {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        .product-detail-description-rating-count {
+          margin: 0px 10px;
+        }
+      }
+      .product-detail-description-short {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 0px;
+        line-height: 30px;
+      }
+
+      .product-detail-description-color {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .product-detail-description-color-title {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+      .product-detail-description-quantity {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .product-detail-description-quantity-title {
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .product-detail-description-quantity-counter {
+          .counter-size {
+            font-size: 30px;
+          }
+        }
+      }
+      .add-to-cart {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        .button-big {
+          font-size: 20px;
+          border-radius: 40px;
+          padding: 20px 30px;
+          margin: 10px;
+          font-weight: bolder;
+        }
+      }
+
+      .product-detail-accordian {
+        margin: 20px;
+        height: 100px;
+        .product-detail-accordian-item {
+          margin: 20px;
+          .product-detail-accordian-item-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          .product-detail-accordian-item-content {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
