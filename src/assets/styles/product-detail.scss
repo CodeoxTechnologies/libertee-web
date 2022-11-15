@@ -3,6 +3,7 @@
 
 .product-detail-section {
   margin: 30px;
+  font-family: "Montserrat", "sans-serif";
   .product-detail-body {
     margin: 30px;
     .product-card {
@@ -11,6 +12,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 10px;
+      height: 100%;
       .product-card-top {
         display: none;
         flex-direction: column;
@@ -104,7 +106,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 28px;
+        font-size: 24px;
         .product-detail-description-rating-count {
           margin: 0px 10px;
         }
@@ -172,6 +174,70 @@
             margin: 0px;
           }
         }
+      }
+    }
+    .product-detail-accordian {
+      .MuiAccordion-root {
+        position: inherit;
+      }
+      .product-detail-accordian-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0px;
+      }
+      .product-detail-accordian-paragraph {
+        margin: 0px;
+        line-height: 30px;
+      }
+    }
+    .product-detail-sexologist {
+      margin: 10px 0px;
+      .product-detail-sexologist-title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .product-detail-testimonials {
+      margin: 10px 0px;
+      .product-detail-testimonials-title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .product-detail-testimonials-list {
+        margin: 10px 0px;
+        .product-detail-testimonials-list-paper {
+          padding: 10px;
+          border-radius: 10px;
+          margin: 10px 0px;
+          display: flex;
+          flex-direction: row;
+          .product-detail-testimonials-list-item {
+            .product-detail-testimonials-list-item-name {
+              font-size: 20px;
+              font-weight: 600;
+              margin: 0px;
+            }
+            .product-detail-testimonials-item-rating {
+              margin: 10px -3px;
+            }
+            .product-detail-testimonials-list-item-title {
+              font-weight: 600;
+              margin: 10px 0px;
+            }
+            .product-detail-testimonial-list-item-content {
+              max-width: 90%;
+              display: flex;
+              flex-wrap: nowrap;
+            }
+          }
+        }
+      }
+      .product-detail-testimonials-show-more {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
       }
     }
   }

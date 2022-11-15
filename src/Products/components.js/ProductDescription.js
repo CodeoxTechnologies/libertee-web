@@ -1,29 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Rating from "@material-ui/lab/Rating";
 import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRounded";
-import rupees from "../../assets/images/rupee.png";
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-  Checkbox,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import GroupedButtons from "./ButtonGroups";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    background: "#f2f2f2",
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: 600,
-  },
-}));
 const ProductDescription = ({ product }) => {
-  const classes = useStyles();
   return (
     <div className="product-detail-description">
       <div className="product-detail-description-top">
@@ -49,61 +28,6 @@ const ProductDescription = ({ product }) => {
         her ultimate pleasure. With 10 powerful speed settings, rabbit is a
         handy love-glove to satisfy all your desires.
       </div>
-
-      {/* <div className={classes.root}>
-        <Accordion elevation={0} style={{ background: "#f2f2f2" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography className={classes.heading}>
-              Product Information
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <AccordionDetails>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </AccordionDetails>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion elevation={0} style={{ background: "#f2f2f2" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <Typography className={classes.heading}>How to Use</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion elevation={0} style={{ background: "#f2f2f2" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3a-content"
-            id="panel3a-header"
-          >
-            <Typography className={classes.heading}>
-              What is in the box
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </div> */}
       <div className="product-detail-description-color">
         <p className="product-detail-description-color-title">Color : </p>
         <div className="product-detail-description-color-<list">

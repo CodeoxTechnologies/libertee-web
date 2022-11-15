@@ -5,6 +5,8 @@ import Quiz from "./Quiz";
 import ProductDetailCard from "./ProductDetailCard";
 import ProductDescription from "./ProductDescription";
 import GroupedButtons from "./ButtonGroups";
+import ProductAccordian from "./ProductAccordian";
+import Sexologist from "./Sexologist";
 export {
   ProductTriple,
   ProductList,
@@ -13,4 +15,6 @@ export {
   ProductDetailCard,
   ProductDescription,
   GroupedButtons,
+  ProductAccordian,
+  Sexologist,
 };

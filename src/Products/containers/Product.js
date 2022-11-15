@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Grid } from "@material-ui/core";
-import { ProductDescription, ProductDetailCard } from "../components.js";
-import { productDetail } from "../index.js";
+import {
+  ProductAccordian,
+  ProductDescription,
+  ProductDetailCard,
+  Sexologist,
+  Quiz,
+} from "../components.js";
+import { productDetail, testimonialsList } from "../index.js";
+import Testimonials from "../components.js/Testimonials.js";
 
 const Product = () => {
   return (
@@ -15,6 +22,30 @@ const Product = () => {
             <ProductDescription product={productDetail} />
           </Grid>
         </Grid>
+        <Grid container spacing={3}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={11}
+            lg={11}
+            style={{ padding: "20px 0px" }}
+          >
+            <ProductAccordian />
+          </Grid>
+        </Grid>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={11} lg={11} sm={12}>
+            <Sexologist />
+          </Grid>
+        </Grid>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={11} lg={11} sm={12}>
+            <Testimonials testimonialsList={testimonialsList} />
+          </Grid>
+        </Grid>
+        <div className="products-list-border"></div>
+        <Quiz />
       </div>
     </div>
   );
