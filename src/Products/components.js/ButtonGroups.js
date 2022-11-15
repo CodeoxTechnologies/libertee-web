@@ -20,22 +20,34 @@ class GroupedButtons extends React.Component {
     return (
       <ButtonGroup size="large" style={{ padding: "30px" }}>
         <button
-          className="button-black counter-size "
+          className="button-white counter-size "
           onClick={this.handleIncrement}
+          style={{ padding: "10px 20px" }}
         >
           <span style={{ fontSize: "30px" }}> +</span>
         </button>
         {displayCounter && (
-          <button className="counter-size">
-            <span style={{ fontSize: "20px", fontFamily: "Montserrat" }}>
+          <button className="button-white counter-size">
+            <span
+              style={{
+                fontSize: "30px",
+                fontFamily: "Montserrat",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "0px 20px",
+              }}
+            >
               {this.state.counter}
             </span>{" "}
           </button>
         )}
         {displayCounter && (
           <button
-            className="button-black counter-size"
+            className="button-white counter-size"
             onClick={this.handleDecrement}
+            style={{ padding: "10px 20px" }}
           >
             <span style={{ fontSize: "30px" }}>-</span>
           </button>

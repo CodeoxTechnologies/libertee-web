@@ -35,6 +35,13 @@ const Testimonials = ({ testimonialsList }) => {
                 <p className="product-detail-testimonial-list-item-content">
                   {testimonial.content}
                 </p>
+                {testimonial.images && testimonial.images.length > 0 ? (
+                  <div className="product-detail-tesimonial-list-item-images">
+                    {testimonial.images.map((image, index) => {
+                      return <img src={image} className />;
+                    })}
+                  </div>
+                ) : null}
               </div>
             </Paper>
           );
