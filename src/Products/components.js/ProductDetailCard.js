@@ -25,7 +25,7 @@ const ProductDetailCard = ({ product }) => {
             <div className="product-card-feature-item">
               <img
                 src={feature.image}
-                className="product-card-feature-item-icon"
+                className={`product-card-feature-item-icon${index}`}
                 alt="feature"
               />
               <p className="product-card-feature-item-name">{feature.name}</p>

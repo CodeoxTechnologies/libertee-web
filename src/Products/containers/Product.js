@@ -27,20 +27,20 @@ const Product = () => {
             item
             xs={12}
             sm={12}
-            md={11}
-            lg={11}
+            md={12}
+            lg={12}
             style={{ padding: "20px 0px" }}
           >
             <ProductAccordian />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
-          <Grid item xs={12} md={11} lg={11} sm={12}>
+          <Grid item xs={12} md={12} lg={12} sm={12}>
             <Sexologist />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
-          <Grid item xs={12} md={11} lg={11} sm={12}>
+          <Grid item xs={12} md={12} lg={12} sm={12}>
             <Testimonials testimonialsList={testimonialsList} />
           </Grid>
         </Grid>

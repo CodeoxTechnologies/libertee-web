@@ -30,10 +30,11 @@ const ProductDescription = ({ product }) => {
       </div>
       <div className="product-detail-description-color">
         <p className="product-detail-description-color-title">Color : </p>
-        <div className="product-detail-description-color-<list">
+        <div className="product-detail-description-color-list">
           {product.color.map((item, index) => (
             <FiberManualRecordRoundedIcon
-              style={{ color: item.color, fontSize: "80px" }}
+              style={{ color: item.color }}
+              className="product-detail-description-color-list-item"
             />
           ))}
         </div>
