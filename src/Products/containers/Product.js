@@ -44,7 +44,9 @@ const Product = () => {
             <Testimonials testimonialsList={testimonialsList} />
           </Grid>
         </Grid>
-        <div className="products-list-border"></div>
+      </div>
+      <div className="products-list-border"></div>
+      <div>
         <Quiz />
       </div>
     </div>

@@ -138,6 +138,23 @@
           }
         }
       }
+      .button-group {
+        padding: 30px;
+        .button-group-item-1 {
+          padding: 10px 20px;
+        }
+        .button-group-item-2 {
+          font-size: 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 20px;
+        }
+        .button-group-item-3 {
+          padding: 10px 20px;
+        }
+      }
       .add-to-cart {
         margin: 20px 0px;
         display: flex;
@@ -150,24 +167,6 @@
           padding: 20px 30px;
           margin: 10px;
           font-weight: bolder;
-        }
-      }
-
-      .product-detail-accordian {
-        margin: 20px;
-        height: 100px;
-        .product-detail-accordian-item {
-          margin: 20px;
-          .product-detail-accordian-item-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0px;
-          }
-          .product-detail-accordian-item-content {
-            font-size: 14px;
-            font-weight: 400;
-            margin: 0px;
-          }
         }
       }
     }
@@ -324,37 +323,84 @@
             }
           }
         }
+        .button-group {
+          padding: 10px;
+          .button-group-item-1 {
+            padding: 5px 10px;
+            font-size: 30px;
+          }
+          .button-group-item-2 {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+          }
+          .button-group-item-3 {
+            padding: 5px 10px;
+            font-size: 30px;
+          }
+        }
         .add-to-cart {
-          margin: 20px 0px;
+          margin: 10px 0px;
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: flex-start;
           .button-big {
-            font-size: 20px;
-            border-radius: 40px;
-            padding: 20px 30px;
-            margin: 10px;
-            font-weight: bolder;
+            font-size: 10px;
+            padding: 10px 20px;
+            margin: 0px 10px 0px 0px;
           }
         }
-
-        .product-detail-accordian {
-          margin: 20px;
-          height: 100px;
-          .product-detail-accordian-item {
-            margin: 20px;
-            .product-detail-accordian-item-title {
-              font-size: 20px;
-              font-weight: 600;
-              margin: 0px;
-            }
-            .product-detail-accordian-item-content {
-              font-size: 14px;
-              font-weight: 400;
-              margin: 0px;
+      }
+      .product-detail-accordian {
+        .product-detail-accordian-title {
+          font-size: 14px;
+        }
+        .product-detail-accordian-paragraph {
+          font-size: 14px;
+        }
+      }
+      .product-detail-sexologist {
+        margin: 10px 0px;
+        .product-detail-sexologist-title {
+          font-size: 18px;
+        }
+        .product-detail-sexologist-content {
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+      .product-detail-testimonials {
+        margin: 10px 0px;
+        .product-detail-testimonials-title {
+          font-size: 18px;
+        }
+        .product-detail-testimonials-list {
+          .product-detail-testimonials-list-paper {
+            .product-detail-testimonials-list-item {
+              .product-detail-testimonials-list-item-name {
+                font-size: 18px;
+              }
+              .product-detail-testimonials-item-rating {
+                margin: 10px -3px;
+              }
+              .product-detail-testimonials-list-item-title {
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: capitalize;
+              }
+              .product-detail-testimonial-list-item-content {
+                font-size: 14px;
+                line-height: 30px;
+              }
             }
           }
+        }
+        .product-detail-tesimonial-list-item-images {
+          flex-direction: column;
         }
       }
     }

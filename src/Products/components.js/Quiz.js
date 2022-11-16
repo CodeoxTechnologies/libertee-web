@@ -3,7 +3,7 @@ import ChatIcon from '@material-ui/icons/Chat';
 
 const Quiz = () => {
     return (
-        <div className='quiz-section'>
+        <div className='quiz-section' align="center">
             <div >
                 <ChatIcon  className='quiz-icon'/>
             </div>

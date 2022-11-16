@@ -4,7 +4,7 @@ const Sexologist = () => {
   return (
     <div className="product-detail-sexologist">
       <p className="product-detail-sexologist-title">Our Sexologist</p>
-      <p className="product-detail-sexologist-coontent">
+      <p className="product-detail-sexologist-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
