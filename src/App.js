@@ -27,13 +27,13 @@ class App extends Component {
             <Route exact={true} path="/learn">
               <Learn />
             </Route>
-            <Route exact={true} path="/libertee-web/products">
+            <Route exact={true} path="/products">
               <Products />
             </Route>
-            <Route exact={true} path="/libertee-web/product/:name">
+            <Route exact={true} path="/rabbit-vibrator">
               <Product />
             </Route>
-            <Route exact={true} path="/libertee-web/profile">
+            <Route exact={true} path="/profile">
               <Profile />
             </Route>
           </Switch>
