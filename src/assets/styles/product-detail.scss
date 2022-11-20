@@ -31,22 +31,16 @@
           font-family: "Montserrat", sans-serif;
           font-size: 30px;
           font-weight: 600;
-          margin: 0px;
         }
       }
       .product-card-middle {
-        margin: 0px;
         img {
           width: 100%;
           height: 100%;
           border-radius: 10px;
         }
       }
-      .product-card-dot {
-        margin: 0px;
-      }
       .product-card-bottom {
-        margin: 0px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -79,7 +73,7 @@
       align-items: flex-start;
       .product-detail-description-top {
         .product-detail-description-top-title {
-          font-size: 46px;
+          font-size: 32px;
           font-weight: 700;
           font-family: "Montserrat", sans-serif;
           margin: 0px;
@@ -87,7 +81,7 @@
       }
       .product-detail-description-price {
         font-family: "Montserrat", sans-serif;
-        font-size: 42px;
+        font-size: 28px;
         font-weight: bolder;
         display: flex;
         flex-direction: row;

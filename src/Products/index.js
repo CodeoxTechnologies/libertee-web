@@ -131,7 +131,7 @@ export const productsList = [
 export const productDetail = {
   name: "Rabbit Vibrator",
   price: 2899,
-  image: prodImage1,
+  image: prodImage2,
   color: [
     { color: "#FF005C", active: true },
     { color: "#5F0081", active: false },
