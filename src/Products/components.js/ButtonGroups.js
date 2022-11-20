@@ -6,25 +6,25 @@ const ButtonGroups = () => {
   const [counter, setCounter] = useState(1);
   return (
     <ButtonGroup size="large" className="button-group">
+      {counter && (
+        <button
+          className="button-white counter-size button-group-item-3"
+          onClick={() => (counter >= 2 ? setCounter(counter - 1) : null)}
+        >
+          <span >-</span>
+        </button>
+      )}
+      {counter && (
+        <button className="button-white counter-size button-group-item-2">
+          <span style={{}}>{counter}</span>{" "}
+        </button>
+      )}
       <button
         className="button-white counter-size button-group-item-1"
         onClick={() => setCounter(counter + 1)}
       >
         <span>+</span>
       </button>
-      {counter && (
-        <button className="button-white counter-size button-group-item-2">
-          <span style={{}}>{counter}</span>{" "}
-        </button>
-      )}
-      {counter && (
-        <button
-          className="button-white counter-size button-group-item-3"
-          onClick={() => (counter >= 2 ? setCounter(counter - 1) : null)}
-        >
-          <span>-</span>
-        </button>
-      )}
     </ButtonGroup>
   );
 };

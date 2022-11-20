@@ -5,7 +5,7 @@ import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRo
 const ProductDetailCard = ({ product }) => {
   return (
     <Paper className="product-card" elevation={0} S>
-      <div className="product-card-top">
+      <div className="product-card-top" align="center">
         <p className="product-card-top-title">{product.name}</p>
         <p className="product-card-top-price">Rs {product.price}</p>
       </div>
