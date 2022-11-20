@@ -13,7 +13,7 @@ const Navigation = () => {
         </Link>
       </span>
       <span>
-        <Link to="products">
+        <Link to="/products">
           <LocalMallIcon /> Buy
         </Link>
       </span>

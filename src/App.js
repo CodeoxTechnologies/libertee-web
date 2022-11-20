@@ -21,7 +21,7 @@ class App extends Component {
           <Header />
           <Navigation />
           <Switch>
-            <Route exact={true} path="/libertee-web">
+            <Route exact={true} path="/">
               <Home />
             </Route>
             <Route exact={true} path="/learn">
@@ -30,7 +30,7 @@ class App extends Component {
             <Route exact={true} path="/products">
               <Products />
             </Route>
-            <Route exact={true} path="/rabbit-vibrator">
+            <Route exact={true} path="/product/:name">
               <Product />
             </Route>
             <Route exact={true} path="/profile">

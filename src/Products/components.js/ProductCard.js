@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     <Paper
       className="product-card"
       elevation={0}
-      onClick={() => window.location.assign(`/${product.url}`)}
+      onClick={() => window.location.assign(`/product/${product.url}`)}
     >
       <div className="product-card-top">
         <p className="product-card-name">{product.name}</p>
