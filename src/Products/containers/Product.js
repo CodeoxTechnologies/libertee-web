@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Breadcrumbs, Typography, Link } from "@material-ui/core";
 import {
   ProductAccordian,
   ProductDescription,
@@ -14,11 +14,27 @@ const Product = () => {
   return (
     <div className="product-detail-section">
       <div className="product-detail-body">
+        <Grid container spacing={0}>
+          <Grid item lg={12} md={12} sm={12} xs={12}>
+            <Breadcrumbs
+              aria-label="breadcrumb"
+              className="product-detail-breadcrumbs"
+            >
+              <Link underline="hover" href="/">
+                Home
+              </Link>
+              <Link underline="hover" href="/products">
+                Products
+              </Link>
+              <Typography color="text.primary">Rabbit Vibrator</Typography>
+            </Breadcrumbs>
+          </Grid>
+        </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={5} lg={5}>
+          <Grid item xs={12} sm={12} md={4} lg={4}>
             <ProductDetailCard product={productDetail} />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
+          <Grid item xs={12} sm={12} md={7} lg={7}>
             <ProductDescription product={productDetail} />
           </Grid>
         </Grid>

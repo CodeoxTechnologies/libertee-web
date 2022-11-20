@@ -6,10 +6,13 @@
   font-family: "Montserrat", "sans-serif";
   .product-detail-body {
     margin: 10px;
+    .product-detail-breadcrumbs {
+      margin: 20px 0px;
+    }
     .product-card {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       border-radius: 10px;
       height: 100%;
@@ -455,7 +458,22 @@
   @media screen and (min-width: 992px) and (max-width: 1200px) {
   }
   @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .product-detail-body {
+      .product-card {
+        .product-card-top {
+          display: none;
+        }
+      }
+    }
   }
+
   @media screen and (min-width: 1400px) {
+    .product-detail-body {
+      .product-card {
+        .product-card-top {
+          display: none;
+        }
+      }
+    }
   }
 }
