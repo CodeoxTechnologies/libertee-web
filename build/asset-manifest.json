@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.37cd0326.css",
-    "main.js": "/static/js/main.8510d095.js",
+    "main.js": "/static/js/main.bd8e9085.js",
     "static/media/spotlight.png": "/static/media/spotlight.c5bb6d206343355c831a.png",
     "static/media/le-wand-massager-18.png": "/static/media/le-wand-massager-18.ca0b9011f09e6f77afd0.png",
     "static/media/dildo.jpg": "/static/media/dildo.1e2cf71ee32a7e338de3.jpg",
@@ -12,10 +12,10 @@
     "static/media/Tracys-Dog-small-23.jpeg": "/static/media/Tracys-Dog-small-23.00dae0687f2d5695b0b0.jpeg",
     "index.html": "/index.html",
     "main.37cd0326.css.map": "/static/css/main.37cd0326.css.map",
-    "main.8510d095.js.map": "/static/js/main.8510d095.js.map"
+    "main.bd8e9085.js.map": "/static/js/main.bd8e9085.js.map"
   },
   "entrypoints": [
     "static/css/main.37cd0326.css",
-    "static/js/main.8510d095.js"
+    "static/js/main.bd8e9085.js"
   ]
 }
