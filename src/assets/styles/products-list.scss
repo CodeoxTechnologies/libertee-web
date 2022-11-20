@@ -37,10 +37,9 @@
       }
     }
 
-   
-
     .product-list-swiper {
       .product-card {
+        cursor: pointer;
         padding: 20px;
         border-radius: 15px;
         display: flex;
@@ -148,6 +147,7 @@
       .product-list-swiper {
         .product-card {
           width: 95%;
+          cursor: pointer;
           .product-card-top {
             justify-content: flex-start;
             .product-card-name {
