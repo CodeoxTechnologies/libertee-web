@@ -11,6 +11,7 @@ import { productDetail, testimonialsList } from "../index.js";
 import Testimonials from "../components.js/Testimonials.js";
 
 const Product = () => {
+  console.log("innerWdith", window.innerWidth);
   return (
     <div className="product-detail-section">
       <div className="product-detail-body">
@@ -31,10 +32,10 @@ const Product = () => {
           </Grid>
         </Grid>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={4} lg={4}>
+          <Grid item xs={12} sm={6} md={5} lg={4}>
             <ProductDetailCard product={productDetail} />
           </Grid>
-          <Grid item xs={12} sm={12} md={7} lg={7}>
+          <Grid item xs={12} sm={6} md={7} lg={7}>
             <ProductDescription product={productDetail} />
           </Grid>
         </Grid>

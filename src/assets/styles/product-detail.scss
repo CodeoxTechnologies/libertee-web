@@ -408,9 +408,14 @@
       }
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 599px) and (max-width: 992px) {
     .product-detail-body {
       margin: 10px;
+      .product-card {
+        .product-card-top {
+          display: none;
+        }
+      }
       .product-detail-description {
         .product-detail-description-color-list {
           .product-detail-description-color-list-item {
@@ -444,6 +449,18 @@
           .button-group-item-3 {
             padding: 5px 10px;
             font-size: 30px;
+          }
+        }
+        .add-to-cart {
+          margin: 10px 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          .button-big {
+            font-size: 10px;
+            padding: 20px 30px;
+            margin: 0px 10px 0px 0px;
           }
         }
       }
