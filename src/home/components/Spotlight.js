@@ -3,9 +3,12 @@ import React from "react";
 import { Paper } from "@mui/material";
 import { isMobile } from "react-device-detect";
 
-const SpotLight = () => {
+const SpotLight = ({ spotLight }) => {
   return (
-    <Paper className="spotlight-section">
+    <Paper
+      className="spotlight-section"
+      style={{ backgroundImage: `url(${spotLight.image_url})` }}
+    >
       <Grid container spacing={2} className="spotlight-top">
         <Grid item md={6} xs={6} sm={6}>
           <div className="spotlight-text">
@@ -29,13 +32,8 @@ const SpotLight = () => {
       </Grid>
       <Grid container spacing={3} className="spotlight-bottom">
         <Grid item md={8} xs={10} sm={10} className="spotlight-bottom-content">
-          <p className="spotlight-title">
-            Will i loose my hair if i Masturbate ?
-          </p>
-          <p className="spotlight-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p className="spotlight-title">{spotLight.short_title}</p>
+          <p className="spotlight-description">{spotLight.short_description}</p>
         </Grid>
       </Grid>
     </Paper>

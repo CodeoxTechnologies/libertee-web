@@ -1,1056 +1,1017 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://use.typekit.net/gak5scy.css");
 
 body {
-    background: #f2f2f2;
-    font-family: 'work-sans', sans-serif;
+  background: #f2f2f2;
+  font-family: "work-sans", sans-serif;
 }
 
 // mobile devices
 @media screen and (min-width: 250px) and (max-width: 766px) {
-    .home {
-        .libertee-body {
-            margin: 20px;
+  .home {
+    .libertee-body {
+      margin: 20px;
 
-            .spotlight-section {
-                margin-top: 20px;
-                font-family: 'work-sans', sans-serif;
-                font-style: normal;
-                background: url('../images/spotlight.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                width: 100%;
-                height: 180px;
-                border-radius: 10px;
+      .spotlight-section {
+        margin-top: 20px;
+        font-family: "work-sans", sans-serif;
+        font-style: normal;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
 
-                .spotlight-top {
-                    display: flex;
-                    flex-direction: row;
+        .spotlight-top {
+          display: flex;
+          flex-direction: row;
 
-                    .spotlight-text {
-                        color: #fff;
-                        padding: 15px;
-                        font-size: 12px;
-                    }
+          .spotlight-text {
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+          }
 
-                    .read-more-spotlight {
-                        padding: 10px;
-                        justify-content: flex-end;
-                        float: right;
-                        margin: 10px;
-                    }
-                }
-
-                .spotlight-bottom {
-                    .spotlight-bottom-content {
-                        position: absolute;
-                        bottom: 0%;
-                        color: #fff;
-                        margin: 10px;
-
-                        .spotlight-title {
-                            color: #fff;
-                            margin: 0px;
-                            font-size: 12px;
-                            font-weight: 400;
-                        }
-
-                        .spotlight-description {
-                            color: #B4B4B4;
-                            font-size: 10px;
-                        }
-
-                    }
-                }
-            }
-
-            // commitment desktop
-            .commitment-desktop {
-                display: none;
-            }
-
-            // commitment mobile
-            .commitment-mobile {
-                margin-top: 20px;
-
-                .commitment-section {
-                    background: #fff;
-                    border-radius: 10px;
-                    padding: 10px;
-                    height: 445px;
-                    font-family: 'work-sans';
-                    font-style: normal;
-                    font-weight: 400;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    position: relative;
-
-                    .commitment-section-heading {
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
-
-                    .commitment-section-body-list {
-                        font-size: 11px;
-                        line-height: 20px;
-                        color: #4B5563;
-                        padding: 20px;
-
-                        .commitment-section-body-list-item {
-                            justify-content: left;
-                            line-height: 30px;
-
-                            span {
-                                text-decoration: underline;
-                            }
-                        }
-
-                        .item-1 {
-                            width: 259px;
-
-                        }
-
-                        .item-2 {
-                            width: 254px;
-                        }
-
-                        .item-3 {
-                            width: 159px;
-                        }
-                    }
-
-                    .commitment-section-body-image {
-                        img {
-                            height: 50%;
-                            position: absolute;
-                            bottom: 0px;
-                            right: -3%;
-                        }
-                    }
-
-                    .commitment-section-body-button {
-                        padding: 0px 20px 0px 20px;
-                    }
-                }
-            }
-
-            // newsletter
-            .newsletter-container {
-                background: #fff;
-                border-radius: 10px;
-                padding: 10px;
-                margin-top: 10px;
-
-                .newsletter-flex {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-
-                .newsletter-subscribe {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-
-                    input {
-                        width: 70%;
-                        border-radius: 20px;
-                        padding: 8px;
-                        border: none;
-                        background: #F2F2F2;
-                        margin-right: 10px;
-                    }
-                }
-            }
-
-            .testimonial-section {
-                .testimonial-container {
-                    background: #fff;
-                    border-radius: 10px;
-                    padding: 10px;
-                    margin-top: 10px;
-
-                    .testimonial-heading {
-                        font-size: 18px;
-                        margin: 10px;
-
-                        h4 {
-                            margin: 0px;
-                        }
-
-                        .testimonial-question {
-                            color: #4B5563;
-                            font-weight: 500;
-                        }
-                    }
-
-                    .testimonial-section-body-list {
-                        text-align: center;
-                        color: #4B5563;
-                        font-size: 11px;
-                        display: flex;
-                        flex-direction: column;
-                        padding: 15px;
-
-                        .testimonial-section-body-list-item {
-                            line-height: 20px;
-                            display: flex;
-                        }
-                    }
-                }
-            }
-
+          .read-more-spotlight {
+            padding: 10px;
+            justify-content: flex-end;
+            float: right;
+            margin: 10px;
+          }
         }
+
+        .spotlight-bottom {
+          .spotlight-bottom-content {
+            position: absolute;
+            bottom: 0%;
+            color: #fff;
+            margin: 10px;
+
+            .spotlight-title {
+              color: #fff;
+              margin: 0px;
+              font-size: 12px;
+              font-weight: 400;
+            }
+
+            .spotlight-description {
+              color: #b4b4b4;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      // commitment desktop
+      .commitment-desktop {
+        display: none;
+      }
+
+      // commitment mobile
+      .commitment-mobile {
+        margin-top: 20px;
+
+        .commitment-section {
+          background: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          height: 445px;
+          font-family: "work-sans";
+          font-style: normal;
+          font-weight: 400;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+
+          .commitment-section-heading {
+            font-size: 18px;
+            font-weight: 600;
+          }
+
+          .commitment-section-body-list {
+            font-size: 11px;
+            line-height: 20px;
+            color: #4b5563;
+            padding: 20px;
+
+            .commitment-section-body-list-item {
+              justify-content: left;
+              line-height: 30px;
+
+              span {
+                text-decoration: underline;
+              }
+            }
+
+            .item-1 {
+              width: 259px;
+            }
+
+            .item-2 {
+              width: 254px;
+            }
+
+            .item-3 {
+              width: 159px;
+            }
+          }
+
+          .commitment-section-body-image {
+            img {
+              height: 50%;
+              position: absolute;
+              bottom: 0px;
+              right: -3%;
+            }
+          }
+
+          .commitment-section-body-button {
+            padding: 0px 20px 0px 20px;
+          }
+        }
+      }
+
+      // newsletter
+      .newsletter-container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+
+        .newsletter-flex {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .newsletter-subscribe {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          input {
+            width: 70%;
+            border-radius: 20px;
+            padding: 8px;
+            border: none;
+            background: #f2f2f2;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .testimonial-section {
+        .testimonial-container {
+          background: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          margin-top: 10px;
+
+          .testimonial-heading {
+            font-size: 18px;
+            margin: 10px;
+
+            h4 {
+              margin: 0px;
+            }
+
+            .testimonial-question {
+              color: #4b5563;
+              font-weight: 500;
+            }
+          }
+
+          .testimonial-section-body-list {
+            text-align: center;
+            color: #4b5563;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+
+            .testimonial-section-body-list-item {
+              line-height: 20px;
+              display: flex;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 //  tablets
 @media screen and (min-width: 766px) and (max-width: 992px) {
-    .home {
-    
-        .libertee-body {
-            margin: 20px;
+  .home {
+    .libertee-body {
+      margin: 20px;
 
-            .spotlight-section {
-                margin-top: 20px;
-                font-family: 'work-sans', sans-serif;
-                font-style: normal;
-                background: url('../images/spotlight.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                width: 100%;
-                height: 460px;
-                border-radius: 10px;
+      .spotlight-section {
+        margin-top: 20px;
+        font-family: "work-sans", sans-serif;
+        font-style: normal;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 460px;
+        border-radius: 10px;
 
-                .spotlight-top {
-                    display: flex;
-                    flex-direction: row;
+        .spotlight-top {
+          display: flex;
+          flex-direction: row;
 
-                    .spotlight-text {
-                        color: #fff;
-                        padding: 15px;
-                        font-size: 12px;
-                    }
+          .spotlight-text {
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+          }
 
-                    .read-more-spotlight {
-                        padding: 10px;
-                        justify-content: flex-end;
-                        float: right;
-                        margin: 10px;
-                    }
-                }
-
-                .spotlight-bottom {
-                    .spotlight-bottom-content {
-                        position: absolute;
-                        bottom: 0%;
-                        color: #fff;
-                        margin: 10px;
-
-                        .spotlight-title {
-                            color: #fff;
-                            margin: 0px;
-                            font-size: 12px;
-                            font-weight: 400;
-                        }
-
-                        .spotlight-description {
-                            color: #B4B4B4;
-                            font-size: 10px;
-                        }
-
-                    }
-                }
-            }
-
-            // commitment desktop
-            .commitment-desktop {
-                display: none;
-            }
-
-            // commitment mobile
-            .commitment-mobile {
-                margin-top: 20px;
-
-                .commitment-section {
-                    font-family: work-sans, sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 10px;
-                    background: #fff;
-                    position: relative;
-
-                    .commitment-section-heading {
-                        font-size: 24px;
-                    }
-
-                    .commitment-section-body {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        .commitment-section-body-button {
-                            margin: 30px;
-                        }
-
-                        .commitment-section-body-list {
-                            display: flex;
-                            flex-direction: column;
-
-                            .commitment-section-body-list-item {
-                                margin: 10px 10px 25px 10px;
-                                justify-items: flex-start;
-                                flex-wrap: wrap;
-                                color: #4B5563;
-
-                            }
-                        }
-
-                        .commitment-section-body-image {
-                            display: flex;
-                            justify-content: flex-end;
-
-                            img {
-                                width: 221.95px;
-                                height: 381.74px;
-                                position: absolute;
-                                bottom: 0px;
-                                right: 0px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            // newsletter
-            .newsletter-container {
-                background: #fff;
-                border-radius: 10px;
-                padding: 10px;
-                margin-top: 10px;
-
-                .newsletter-flex {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-
-                .newsletter-subscribe {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-
-                    input {
-                        width: 70%;
-                        border-radius: 20px;
-                        padding: 8px;
-                        border: none;
-                        background: #F2F2F2;
-                        margin-right: 10px;
-                    }
-                }
-            }
-
-            .testimonial-section {
-                .testimonial-container {
-                    background: #fff;
-                    border-radius: 10px;
-                    padding: 10px;
-                    margin-top: 10px;
-
-                    .testimonial-heading {
-                        font-size: 18px;
-                        margin: 10px;
-
-                        h4 {
-                            margin: 0px;
-                        }
-
-                        .testimonial-question {
-                            color: #4B5563;
-                            font-weight: 500;
-                        }
-                    }
-
-                    .testimonial-section-body-list {
-                        text-align: center;
-                        color: #4B5563;
-                        font-size: 11px;
-                        display: flex;
-                        flex-direction: column;
-                        padding: 15px;
-
-                        .testimonial-section-body-list-item {
-                            line-height: 20px;
-                            display: flex;
-                        }
-                    }
-                }
-            }
-
+          .read-more-spotlight {
+            padding: 10px;
+            justify-content: flex-end;
+            float: right;
+            margin: 10px;
+          }
         }
+
+        .spotlight-bottom {
+          .spotlight-bottom-content {
+            position: absolute;
+            bottom: 0%;
+            color: #fff;
+            margin: 10px;
+
+            .spotlight-title {
+              color: #fff;
+              margin: 0px;
+              font-size: 12px;
+              font-weight: 400;
+            }
+
+            .spotlight-description {
+              color: #b4b4b4;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      // commitment desktop
+      .commitment-desktop {
+        display: none;
+      }
+
+      // commitment mobile
+      .commitment-mobile {
+        margin-top: 20px;
+
+        .commitment-section {
+          font-family: work-sans, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          background: #fff;
+          position: relative;
+
+          .commitment-section-heading {
+            font-size: 24px;
+          }
+
+          .commitment-section-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .commitment-section-body-button {
+              margin: 30px;
+            }
+
+            .commitment-section-body-list {
+              display: flex;
+              flex-direction: column;
+
+              .commitment-section-body-list-item {
+                margin: 10px 10px 25px 10px;
+                justify-items: flex-start;
+                flex-wrap: wrap;
+                color: #4b5563;
+              }
+            }
+
+            .commitment-section-body-image {
+              display: flex;
+              justify-content: flex-end;
+
+              img {
+                width: 221.95px;
+                height: 381.74px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      // newsletter
+      .newsletter-container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+
+        .newsletter-flex {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .newsletter-subscribe {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          input {
+            width: 70%;
+            border-radius: 20px;
+            padding: 8px;
+            border: none;
+            background: #f2f2f2;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .testimonial-section {
+        .testimonial-container {
+          background: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          margin-top: 10px;
+
+          .testimonial-heading {
+            font-size: 18px;
+            margin: 10px;
+
+            h4 {
+              margin: 0px;
+            }
+
+            .testimonial-question {
+              color: #4b5563;
+              font-weight: 500;
+            }
+          }
+
+          .testimonial-section-body-list {
+            text-align: center;
+            color: #4b5563;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+
+            .testimonial-section-body-list-item {
+              line-height: 20px;
+              display: flex;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 // small desktop
-@media screen and (min-width: 992px) and (max-width:1200px) {
-    .home {
-        .libertee-body {
-            margin: 30px;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home {
+    .libertee-body {
+      margin: 30px;
 
-            .spotlight-section {
-                background: url('../images/spotlight.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                width: 100%;
-                height: 560px;
-                border-radius: 10px;
+      .spotlight-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 560px;
+        border-radius: 10px;
 
-                .spotlight-top {
-                    display: flex;
-                    flex-direction: row;
+        .spotlight-top {
+          display: flex;
+          flex-direction: row;
 
+          .spotlight-text {
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+            letter-spacing: 4px;
+          }
 
-                    .spotlight-text {
-                        color: #fff;
-                        padding: 15px;
-                        font-size: 12px;
-                        letter-spacing: 4px;
-                    }
-
-                    .read-more-spotlight {
-                        padding: 20px;
-                        justify-content: flex-end;
-                        float: right;
-                    }
-                }
-
-                .spotlight-bottom {
-                    .spotlight-bottom-content {
-                        position: absolute;
-                        bottom: 0%;
-                        color: #fff;
-                        margin: 10px;
-
-                        h4 {
-                            color: #fff;
-                        }
-
-                        p {
-                            color: #B4B4B4;
-                            font-size: 12px;
-                        }
-
-                    }
-                }
-            }
-            .commitment-mobile {
-                display: none;
-            }
-            .commitment-desktop {
-                .commitment-section {
-                    font-family: work-sans, sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 10px;
-                    background: #fff;
-                    position: relative;
-
-                    .commitment-section-heading {
-                        font-size: 24px;
-                    }
-
-                    .commitment-section-body {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        .commitment-section-body-button {
-                            margin: 30px;
-                        }
-
-                        .commitment-section-body-list {
-                            display: flex;
-                            flex-direction: column;
-
-                            .commitment-section-body-list-item {
-                                margin: 10px 10px 25px 10px;
-                                justify-items: flex-start;
-                                flex-wrap: wrap;
-                                color: #4B5563;
-
-                            }
-                        }
-
-                        .commitment-section-body-image {
-                            display: flex;
-                            justify-content: flex-end;
-
-                            img {
-                                width: 221.95px;
-                                height: 381.74px;
-                                position: absolute;
-                                bottom: 0px;
-                                right: 0px;
-                            }
-                        }
-                    }
-                }
-            }
-            .newsletter-section {
-                margin-top: 10px;
-
-                .newsletter-container {
-                    background: #fff;
-
-                    .newsletter-heading {
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-
-                    }
-
-                    .newsletter-flex {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                    }
-
-                    .newsletter-subscribe {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 30px;
-
-                        input {
-                            width: 300px;
-                            border-radius: 20px;
-                            padding: 10px;
-                            border: none;
-                            background: #F2F2F2;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .commitment-section-body-list {
-                        display: flex;
-                        flex-direction: column;
-
-                        .commitment-section-body-list-item {
-                            margin: 10px 10px 25px 10px;
-                            justify-items: flex-start;
-                            flex-wrap: wrap;
-                            color: #4B5563;
-
-                        }
-                    }
-                }
-
-            }
-            .testimonial-section {
-                margin-top: 20px;
-
-                .testimonial-container {
-                    background: #fff;
-                    border-radius: 10px;
-
-                    .testimonial-heading {
-
-                        // padding-top: 10px;
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .testimonial-section-body-list {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .testimonial-button {
-                        margin: 15px;
-                    }
-                }
-            }
+          .read-more-spotlight {
+            padding: 20px;
+            justify-content: flex-end;
+            float: right;
+          }
         }
+
+        .spotlight-bottom {
+          .spotlight-bottom-content {
+            position: absolute;
+            bottom: 0%;
+            color: #fff;
+            margin: 10px;
+
+            h4 {
+              color: #fff;
+            }
+
+            p {
+              color: #b4b4b4;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .commitment-mobile {
+        display: none;
+      }
+      .commitment-desktop {
+        .commitment-section {
+          font-family: work-sans, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          background: #fff;
+          position: relative;
+
+          .commitment-section-heading {
+            font-size: 24px;
+          }
+
+          .commitment-section-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .commitment-section-body-button {
+              margin: 30px;
+            }
+
+            .commitment-section-body-list {
+              display: flex;
+              flex-direction: column;
+
+              .commitment-section-body-list-item {
+                margin: 10px 10px 25px 10px;
+                justify-items: flex-start;
+                flex-wrap: wrap;
+                color: #4b5563;
+              }
+            }
+
+            .commitment-section-body-image {
+              display: flex;
+              justify-content: flex-end;
+
+              img {
+                width: 221.95px;
+                height: 381.74px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+              }
+            }
+          }
+        }
+      }
+      .newsletter-section {
+        margin-top: 10px;
+
+        .newsletter-container {
+          background: #fff;
+
+          .newsletter-heading {
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .newsletter-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+
+          .newsletter-subscribe {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+
+            input {
+              width: 300px;
+              border-radius: 20px;
+              padding: 10px;
+              border: none;
+              background: #f2f2f2;
+              margin-right: 10px;
+            }
+          }
+
+          .commitment-section-body-list {
+            display: flex;
+            flex-direction: column;
+
+            .commitment-section-body-list-item {
+              margin: 10px 10px 25px 10px;
+              justify-items: flex-start;
+              flex-wrap: wrap;
+              color: #4b5563;
+            }
+          }
+        }
+      }
+      .testimonial-section {
+        margin-top: 20px;
+
+        .testimonial-container {
+          background: #fff;
+          border-radius: 10px;
+
+          .testimonial-heading {
+            // padding-top: 10px;
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .testimonial-section-body-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .testimonial-button {
+            margin: 15px;
+          }
+        }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .home {
-        .libertee-body {
-            margin: 30px;
+  .home {
+    .libertee-body {
+      margin: 30px;
 
-            .spotlight-section {
-                background: url('../images/spotlight.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
+      .spotlight-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
 
-                .spotlight-top {
-                    display: flex;
-                    flex-direction: row;
+        .spotlight-top {
+          display: flex;
+          flex-direction: row;
 
-                    .spotlight-text {
-                        color: #fff;
-                        padding: 15px;
-                        font-size: 12px;
-                        font-weight: 300;
-                        letter-spacing: 3px;
-                    }
+          .spotlight-text {
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 3px;
+          }
 
-                    .read-more-spotlight {
-                        padding: 20px;
-                        justify-content: flex-end;
-                        float: right;
-                    }
-                }
-
-                .spotlight-bottom {
-                    .spotlight-bottom-content {
-                        position: absolute;
-                        bottom: 0%;
-                        margin: 10px;
-
-                        .spotlight-title {
-                            color: #fff;
-                            font-weight: 400;
-                            font-size: 18px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #b1b1b1;
-                            font-size: 12px;
-                            margin-top: 3px;
-                        }
-
-                    }
-                }
-            }
-
-            .commitment-mobile {
-                display: none;
-            }
-
-            .commitment-desktop {
-                .commitment-section {
-                    font-family: work-sans, sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 10px;
-                    background: #fff;
-                    position: relative;
-
-                    .commitment-section-heading {
-                        font-size: 24px;
-                    }
-
-                    .commitment-section-body {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        .commitment-section-body-button {
-                            margin: 30px;
-                        }
-
-                        .commitment-section-body-list {
-                            display: flex;
-                            flex-direction: column;
-                            font-size: 12px;
-
-                            .commitment-section-body-list-item {
-                                margin: 10px 10px 25px 10px;
-                                justify-items: flex-start;
-                                flex-wrap: wrap;
-                                color: #4B5563;
-
-                            }
-                        }
-
-                        .commitment-section-body-image {
-                            display: flex;
-                            justify-content: flex-end;
-
-                            img {
-                                width: 200.95px;
-                                height: 324.74px;
-                                position: absolute;
-                                bottom: 0px;
-                                right: -2%;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .newsletter-section {
-                margin-top: 20px;
-
-                .newsletter-container {
-                    background: #fff;
-                    border-radius: 10px;
-
-                    .newsletter-heading {
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-
-                    }
-
-                    .newsletter-flex {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                    }
-
-                    .newsletter-subscribe {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 30px;
-
-
-                        input {
-                            width: 300px;
-                            border-radius: 20px;
-                            padding: 10px;
-                            border: none;
-                            background: #F2F2F2;
-                            margin-right: 10px;
-                        }
-                    }
-                }
-
-            }
-
-            .testimonial-section {
-                margin-top: 20px;
-
-                .testimonial-container {
-                    background: #fff;
-                    border-radius: 10px;
-
-                    .testimonial-heading {
-
-                        // padding-top: 10px;
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .testimonial-section-body-list {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .testimonial-button {
-                        margin: 15px;
-                    }
-                }
-            }
-
-
-
+          .read-more-spotlight {
+            padding: 20px;
+            justify-content: flex-end;
+            float: right;
+          }
         }
+
+        .spotlight-bottom {
+          .spotlight-bottom-content {
+            position: absolute;
+            bottom: 0%;
+            margin: 10px;
+
+            .spotlight-title {
+              color: #fff;
+              font-weight: 400;
+              font-size: 18px;
+              margin: 0px;
+            }
+
+            p {
+              color: #b1b1b1;
+              font-size: 12px;
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+
+      .commitment-mobile {
+        display: none;
+      }
+
+      .commitment-desktop {
+        .commitment-section {
+          font-family: work-sans, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          background: #fff;
+          position: relative;
+
+          .commitment-section-heading {
+            font-size: 24px;
+          }
+
+          .commitment-section-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .commitment-section-body-button {
+              margin: 30px;
+            }
+
+            .commitment-section-body-list {
+              display: flex;
+              flex-direction: column;
+              font-size: 12px;
+
+              .commitment-section-body-list-item {
+                margin: 10px 10px 25px 10px;
+                justify-items: flex-start;
+                flex-wrap: wrap;
+                color: #4b5563;
+              }
+            }
+
+            .commitment-section-body-image {
+              display: flex;
+              justify-content: flex-end;
+
+              img {
+                width: 200.95px;
+                height: 324.74px;
+                position: absolute;
+                bottom: 0px;
+                right: -2%;
+              }
+            }
+          }
+        }
+      }
+
+      .newsletter-section {
+        margin-top: 20px;
+
+        .newsletter-container {
+          background: #fff;
+          border-radius: 10px;
+
+          .newsletter-heading {
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .newsletter-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+
+          .newsletter-subscribe {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+
+            input {
+              width: 300px;
+              border-radius: 20px;
+              padding: 10px;
+              border: none;
+              background: #f2f2f2;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .testimonial-section {
+        margin-top: 20px;
+
+        .testimonial-container {
+          background: #fff;
+          border-radius: 10px;
+
+          .testimonial-heading {
+            // padding-top: 10px;
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .testimonial-section-body-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .testimonial-button {
+            margin: 15px;
+          }
+        }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    .home {
-        .libertee-body {
-            margin: 30px;
+  .home {
+    .libertee-body {
+      margin: 30px;
 
-            .spotlight-section {
-                background: url('../images/spotlight.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
+      .spotlight-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
 
-                .spotlight-top {
-                    display: flex;
-                    flex-direction: row;
+        .spotlight-top {
+          display: flex;
+          flex-direction: row;
 
-                    .spotlight-text {
-                        color: #fff;
-                        padding: 15px;
-                        font-size: 12px;
-                        font-weight: 300;
-                        letter-spacing: 3px;
-                    }
+          .spotlight-text {
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 3px;
+          }
 
-                    .read-more-spotlight {
-                        padding: 20px;
-                        justify-content: flex-end;
-                        float: right;
-                    }
-                }
-
-                .spotlight-bottom {
-                    .spotlight-bottom-content {
-                        position: absolute;
-                        bottom: 0%;
-                        margin: 10px;
-
-                        .spotlight-title {
-                            color: #fff;
-                            font-weight: 400;
-                            font-size: 18px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #b1b1b1;
-                            font-size: 12px;
-                            margin-top: 3px;
-                        }
-
-                    }
-                }
-            }
-
-            .commitment-mobile {
-                display: none;
-            }
-
-            .commitment-desktop {
-                .commitment-section {
-                    font-family: work-sans, sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 10px;
-                    background: #fff;
-                    position: relative;
-
-                    .commitment-section-heading {
-                        font-size: 24px;
-                    }
-
-                    .commitment-section-body {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        .commitment-section-body-button {
-                            margin: 30px;
-                        }
-
-                        .commitment-section-body-list {
-                            display: flex;
-                            flex-direction: column;
-                            font-size: 12px;
-
-                            .commitment-section-body-list-item {
-                                margin: 10px 10px 25px 10px;
-                                justify-items: flex-start;
-                                flex-wrap: wrap;
-                                color: #4B5563;
-
-                            }
-                        }
-
-                        .commitment-section-body-image {
-                            display: flex;
-                            justify-content: flex-end;
-
-                            img {
-                                width: 200.95px;
-                                height: 324.74px;
-                                position: absolute;
-                                bottom: 0px;
-                                right: -2%;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .newsletter-section {
-                margin-top: 20px;
-
-                .newsletter-container {
-                    background: #fff;
-                    border-radius: 10px;
-
-                    .newsletter-heading {
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-
-                    }
-
-                    .newsletter-flex {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                    }
-
-                    .newsletter-subscribe {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 30px;
-
-
-                        input {
-                            width: 300px;
-                            border-radius: 20px;
-                            padding: 10px;
-                            border: none;
-                            background: #F2F2F2;
-                            margin-right: 10px;
-                        }
-                    }
-                }
-
-            }
-
-            .testimonial-section {
-                margin-top: 20px;
-
-                .testimonial-container {
-                    background: #fff;
-                    border-radius: 10px;
-
-                    .testimonial-heading {
-
-                        // padding-top: 10px;
-                        h4 {
-                            font-size: 32px;
-                            font-weight: 500;
-                            padding-top: 30px;
-                            margin: 0px;
-                        }
-
-                        p {
-                            color: #4B5563;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .testimonial-section-body-list {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .testimonial-button {
-                        margin: 15px;
-                    }
-                }
-            }
-
-
-
+          .read-more-spotlight {
+            padding: 20px;
+            justify-content: flex-end;
+            float: right;
+          }
         }
+
+        .spotlight-bottom {
+          .spotlight-bottom-content {
+            position: absolute;
+            bottom: 0%;
+            margin: 10px;
+
+            .spotlight-title {
+              color: #fff;
+              font-weight: 400;
+              font-size: 18px;
+              margin: 0px;
+            }
+
+            p {
+              color: #b1b1b1;
+              font-size: 12px;
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+
+      .commitment-mobile {
+        display: none;
+      }
+
+      .commitment-desktop {
+        .commitment-section {
+          font-family: work-sans, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          background: #fff;
+          position: relative;
+
+          .commitment-section-heading {
+            font-size: 24px;
+          }
+
+          .commitment-section-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .commitment-section-body-button {
+              margin: 30px;
+            }
+
+            .commitment-section-body-list {
+              display: flex;
+              flex-direction: column;
+              font-size: 12px;
+
+              .commitment-section-body-list-item {
+                margin: 10px 10px 25px 10px;
+                justify-items: flex-start;
+                flex-wrap: wrap;
+                color: #4b5563;
+              }
+            }
+
+            .commitment-section-body-image {
+              display: flex;
+              justify-content: flex-end;
+
+              img {
+                width: 200.95px;
+                height: 324.74px;
+                position: absolute;
+                bottom: 0px;
+                right: -2%;
+              }
+            }
+          }
+        }
+      }
+
+      .newsletter-section {
+        margin-top: 20px;
+
+        .newsletter-container {
+          background: #fff;
+          border-radius: 10px;
+
+          .newsletter-heading {
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .newsletter-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          }
+
+          .newsletter-subscribe {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+
+            input {
+              width: 300px;
+              border-radius: 20px;
+              padding: 10px;
+              border: none;
+              background: #f2f2f2;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .testimonial-section {
+        margin-top: 20px;
+
+        .testimonial-container {
+          background: #fff;
+          border-radius: 10px;
+
+          .testimonial-heading {
+            // padding-top: 10px;
+            h4 {
+              font-size: 32px;
+              font-weight: 500;
+              padding-top: 30px;
+              margin: 0px;
+            }
+
+            p {
+              color: #4b5563;
+              font-size: 22px;
+            }
+          }
+
+          .testimonial-section-body-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .testimonial-button {
+            margin: 15px;
+          }
+        }
+      }
     }
+  }
 }
