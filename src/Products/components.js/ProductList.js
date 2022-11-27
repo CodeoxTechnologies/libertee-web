@@ -6,8 +6,7 @@ import { productsList } from "..";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-const ProductList = () => {
-  const [products] = useState(productsList);
+const ProductList = ({ products }) => {
   const [dimensions, setDimensions] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,

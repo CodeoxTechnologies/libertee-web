@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ProductList, ProductTriple, Quiz } from "../components.js";
 import { Grid } from "@material-ui/core";
+import { getProductsApi } from "../apiServices.js";
 
 const Products = () => {
+  const [products, setProducts] = React.useState([]);
+  useEffect(() => {
+    getProductsApi(setProducts);
+  }, []);
+  console.log(products, "products");
   return (
     <div className="products-list-section">
       <div className="products-list-body">
@@ -16,7 +22,7 @@ const Products = () => {
         </Grid>
         <div className="products-list-border"></div>
         <div className="product-list-swiper">
-          <ProductList />
+          <ProductList products={products} />
         </div>
         <div className="products-list-border"></div>
         <Quiz />
