@@ -7,7 +7,7 @@ const SpotLight = ({ spotLight }) => {
   return (
     <Paper
       className="spotlight-section"
-      style={{ backgroundImage: `url(${spotLight.image_url})` }}
+      style={{ backgroundImage: `url(${spotLight.image_url})`}}
     >
       <Grid container spacing={2} className="spotlight-top">
         <Grid item md={6} xs={6} sm={6}>

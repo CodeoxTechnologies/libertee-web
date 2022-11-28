@@ -1,6 +1,6 @@
 import axios from "axios";
 var axiosInstance = axios.create({});
-axiosInstance.defaults.baseURL = "http://46.101.65.156:8069/api/";
+axiosInstance.defaults.baseURL = "http://46.101.65.156:8069/";
 axiosInstance.interceptors.request.use(
   function (config) {
     return config;

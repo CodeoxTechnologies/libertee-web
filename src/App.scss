@@ -291,7 +291,12 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
+        padding: 10px;
+        margin-right: 10px;
+        .nav-cart {
+          display: flex;
+          margin-left: 10px;
+        }
         .shoppingcart {
           padding: 15px;
         }
