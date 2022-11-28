@@ -4,7 +4,7 @@ import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRo
 import waterProof from "../../assets/images/water.png";
 import soundWave from "../../assets/images/sound-wave.png";
 import medical from "../../assets/images/medical.png";
-import { useStateContext } from "../../utils.js/StateContext";
+import { useStateContext } from "../../utils/StateContext";
 
 const ProductCard = ({ product }) => {
   const { onAddToCart } = useStateContext();

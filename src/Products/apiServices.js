@@ -1,4 +1,4 @@
-import { globalGetService } from "../utils.js/globalApiServices";
+import { globalGetService } from "../utils/globalApiServices";
 
 export const getProductsApi = (setProducts) => {
   globalGetService(`product/list`).then((response) => {

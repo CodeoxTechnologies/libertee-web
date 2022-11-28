@@ -1,4 +1,4 @@
-import { globalGetService } from "../utils.js/globalApiServices";
+import { globalGetService } from "../utils/globalApiServices";
 
 export const getSpotlightApi = (setSpotlight) => {
   globalGetService(`api/blog/spotlight`).then((response) => {

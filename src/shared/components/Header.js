@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import libertee from "../../assets/images/libertee.png";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Cart from "./Cart";
 import { UserSidebar } from "../../shared";
 import { Link } from "react-router-dom";
-import { useStateContext } from "../../utils.js/StateContext";
+import { useStateContext } from "../../utils/StateContext";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const Header = () => {
   const { totalQuantities, showCart, setShowCart } = useStateContext();
@@ -29,12 +30,15 @@ const Header = () => {
           <div>
             <UserSidebar />
           </div>
-          <div className="nav-cart">
-            <AddShoppingCartIcon className="cart-icon" />
-            <span>({totalQuantities})</span>
+          <div>
+            <div className="nav-cart" onClick={() => setShowCart(true)}>
+              <AddShoppingCartIcon />
+              <span className="cart-quantity">({totalQuantities})</span>
+            </div>
           </div>
         </div>
       </div>
+      {showCart && <Cart />}
     </div>
   );
 };

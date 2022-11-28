@@ -9,12 +9,13 @@ import "./assets/styles/shared.scss";
 import "./assets/styles/profile.scss";
 import "./assets/styles/products-list.scss";
 import "./assets/styles/product-detail.scss";
+import "./assets/styles/cart.scss";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Profile from "./profile/containers/Profile";
 import Products from "./Products/containers/Products";
 import Product from "./Products/containers/Product";
-import { StateContext } from "./utils.js/StateContext";
+import { StateContext } from "./utils/StateContext";
 const App = () => {
   return (
     <SnackbarProvider autoHideDuration={3000}>
