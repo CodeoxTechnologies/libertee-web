@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Breadcrumbs, Typography, Link } from "@material-ui/core";
 import {
   ProductAccordian,
@@ -9,9 +9,16 @@ import {
 } from "../components.js";
 import { productDetail, testimonialsList } from "../index.js";
 import Testimonials from "../components.js/Testimonials.js";
+import { useParams } from "react-router-dom";
+import { getProductApi } from "../apiServices.js";
 
 const Product = () => {
-  console.log("innerWdith", window.innerWidth);
+  const { slug } = useParams();
+  const [product, setProduct] = useState({});
+  console.log("product", product);
+  useEffect(() => {
+    getProductApi(slug, setProduct);
+  }, []);
   return (
     <div className="product-detail-section">
       <div className="product-detail-body">
@@ -33,10 +40,10 @@ const Product = () => {
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={5} lg={4}>
-            <ProductDetailCard product={productDetail} />
+            <ProductDetailCard product={product} />
           </Grid>
           <Grid item xs={12} sm={6} md={7} lg={7}>
-            <ProductDescription product={productDetail} />
+            <ProductDescription product={product} />
           </Grid>
         </Grid>
         <Grid container spacing={3}>

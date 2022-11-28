@@ -5,3 +5,9 @@ export const getProductsApi = (setProducts) => {
     setProducts(response.data);
   });
 };
+
+export const getProductApi = (slug, setProduct) => {
+  globalGetService(`product/details/${slug}`).then((response) => {
+    setProduct(response.data[0]);
+  });
+};

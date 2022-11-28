@@ -31,7 +31,11 @@ const ProductDescription = ({ product }) => {
       <div className="product-detail-description-color">
         <p className="product-detail-description-color-title">Color : </p>
         <div className="product-detail-description-color-list">
-          {product.color.map((item, index) => (
+          {[
+            { color: "#FF005C", active: true },
+            { color: "#5F0081", active: false },
+            { color: "#0060D1", active: false },
+          ].map((item, index) => (
             <FiberManualRecordRoundedIcon
               style={{ color: item.color }}
               className="product-detail-description-color-list-item"

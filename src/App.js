@@ -17,7 +17,7 @@ import Product from "./Products/containers/Product";
 import { StateContext } from "./utils.js/StateContext";
 const App = () => {
   return (
-    <SnackbarProvider au3toHideDuration={3000}>
+    <SnackbarProvider autoHideDuration={3000}>
       <StateContext>
         <Router>
           <div className="app">

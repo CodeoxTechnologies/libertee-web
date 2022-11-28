@@ -4,22 +4,30 @@ import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRo
 import waterProof from "../../assets/images/water.png";
 import soundWave from "../../assets/images/sound-wave.png";
 import medical from "../../assets/images/medical.png";
+import { useStateContext } from "../../utils.js/StateContext";
 
 const ProductCard = ({ product }) => {
+  const { onAddToCart } = useStateContext();
   return (
     <Paper
       className="product-card"
       elevation={0}
-      onClick={() => window.location.assign(`/product/${product.slug}`)}
+      // onClick={() => window.location.assign(`/product/${product.slug}`)}
     >
-      <div className="product-card-top">
+      <div
+        className="product-card-top"
+        onClick={() => window.location.assign(`/product/${product.slug}`)}
+      >
         <p className="product-card-name">{product.name}</p>
         <p className="product-card-price">Rs {product.price}</p>
       </div>
-      <div className="product-card-image">
-        <img src={product.image_url} alt="product" />
+      <div
+        className="product-card-image"
+        onClick={() => window.location.assign(`/product/${product.slug}`)}
+      >
+        <img src={`${product.image_url}`} alt="product" />
       </div>
-      <div className="product-card-dot">
+      {/* <div className="product-card-dot">
         <div className="product-card-dot-color">
           {[
             { color: "#FF005C", active: true },
@@ -29,11 +37,19 @@ const ProductCard = ({ product }) => {
             <FiberManualRecordRoundedIcon style={{ color: color.color }} />
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="product-card-button">
-        <button className="button-black">Add to Cart</button>
+        <button
+          className="button-black"
+          onClick={() => onAddToCart(product, 1)}
+        >
+          Add to Cart
+        </button>
       </div>
-      <div className="product-card-bottom">
+      <div
+        className="product-card-bottom"
+        onClick={() => window.location.assign(`/product/${product.slug}`)}
+      >
         <div className="product-card-features">
           {[
             { name: "Waterproof", image: waterProof },

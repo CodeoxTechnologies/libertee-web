@@ -8,12 +8,7 @@ const ProductTriple = () => {
       <Grid container spacing={2} className="triple-dildo">
         <Grid item md={4}>
           <Paper elevation={0} className="triple-dildo-paper">
-            <img
-              src={
-                "http://46.101.65.156:8069/web/image?model=product.product&id=4&field=image_1920"
-              }
-              alt="tripledildo"
-            />
+            <img src={tripleDildo} alt="tripledildo" />
           </Paper>
         </Grid>
         <Grid item md={8}>
