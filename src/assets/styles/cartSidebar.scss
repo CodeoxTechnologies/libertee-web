@@ -107,6 +107,32 @@
       }
     }
   }
+}
+.cart-footer {
+  max-height: 30vh;
+  margin: 0px;
+  padding: 10px;
+  .cart-footer-subtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .cart-footer-left-heading {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      margin: 10px;
+    }
+    .cart-footer-right-text {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin: 10px;
+    }
+  }
   .gift-option {
     display: flex;
     flex-direction: row;
@@ -127,31 +153,6 @@
         font-weight: 600;
         cursor: pointer;
       }
-    }
-  }
-}
-.cart-footer {
-  max-height: 30vh;
-  margin: 0px;
-  .cart-footer-subtotal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 10px;
-    .cart-footer-left-heading {
-      font-family: "Montserrat", sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      color: #000;
-      margin: 10px;
-    }
-    .cart-footer-right-text {
-      font-family: "Montserrat", sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: #000;
-      margin: 10px;
     }
   }
   .cart-footer-checkout {

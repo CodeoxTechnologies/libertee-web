@@ -25,7 +25,7 @@ const App = () => {
             <Header />
             <Navigation />
             <Switch>
-              <Route exact={true} path="/">
+              <Route exact={true} path="/" >
                 <Home />
               </Route>
               <Route exact={true} path="/learn">

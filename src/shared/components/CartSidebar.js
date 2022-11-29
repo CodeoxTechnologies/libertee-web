@@ -6,6 +6,7 @@ import { Box } from "@mui/system";
 import { Button } from "@mui/material";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { Link } from "react-router-dom";
+import { FiGift } from "react-icons/fi";
 
 const Cart = () => {
   const {
@@ -85,13 +86,6 @@ const Cart = () => {
                         </div>
                       </div>
                     </div>
-                    {/* <div className="gift-option">
-                      <div className="gift-option-left">
-                        <FiGift className="gift-icon" />
-                        <p>Add a gift message or gift wrap</p>
-                        <span> Add </span>
-                      </div>
-                    </div> */}
                   </>
                 ))
               ) : (
@@ -118,6 +112,13 @@ const Cart = () => {
                 <div className="cart-footer-subtotal">
                   <p className="cart-footer-left-heading">Subtotal</p>
                   <p className="cart-footer-right-text">Rs {totalPrice} /-</p>
+                </div>
+                <div className="gift-option">
+                  <div className="gift-option-left">
+                    <FiGift className="gift-icon" />
+                    <p>Add a gift message or gift wrap</p>
+                    <span> Add </span>
+                  </div>
                 </div>
                 <div className="cart-footer-checkout">
                   <Button
