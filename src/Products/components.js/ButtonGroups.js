@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
+import React from "react";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
+import { useStateContext } from "../../utils/StateContext";
 
 const ButtonGroups = () => {
-  const [counter, setCounter] = useState(1);
+  const { qty, decQty, incQty } = useStateContext();
   return (
     <ButtonGroup size="large" className="button-group">
-      {counter && (
+      {qty && (
         <button
           className="button-white counter-size button-group-item-3"
-          onClick={() => (counter >= 2 ? setCounter(counter - 1) : null)}
+          onClick={() => decQty()}
         >
-          <span >-</span>
+          <span>-</span>
         </button>
       )}
-      {counter && (
+      {qty && (
         <button className="button-white counter-size button-group-item-2">
-          <span style={{}}>{counter}</span>{" "}
+          <span style={{}}>{qty}</span>{" "}
         </button>
       )}
       <button
         className="button-white counter-size button-group-item-1"
-        onClick={() => setCounter(counter + 1)}
+        onClick={() => incQty()}
       >
         <span>+</span>
       </button>

@@ -2,7 +2,9 @@ import React from "react";
 import Rating from "@material-ui/lab/Rating";
 import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRounded";
 import GroupedButtons from "./ButtonGroups";
+import { useStateContext } from "../../utils/StateContext";
 const ProductDescription = ({ product }) => {
+  const { onAddToCart, qty } = useStateContext();
   return (
     <div className="product-detail-description">
       <div className="product-detail-description-top">
@@ -50,8 +52,18 @@ const ProductDescription = ({ product }) => {
         </div>
       </div>
       <div className="add-to-cart">
-        <button className="button-black button-big">Add to Cart </button>
-        <button className="button-white button-big">Buy Now </button>
+        <button
+          className="button-black button-big"
+          onClick={() => onAddToCart(product, qty)}
+        >
+          Add to Cart{" "}
+        </button>
+        <button
+          className="button-white button-big"
+          onClick={() => onAddToCart(product, qty, true)}
+        >
+          Buy Now{" "}
+        </button>
       </div>
     </div>
   );

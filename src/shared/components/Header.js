@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import libertee from "../../assets/images/libertee.png";
-import Cart from "./Cart";
+import Cart from "./CartSidebar";
 import { UserSidebar } from "../../shared";
 import { Link } from "react-router-dom";
 import { useStateContext } from "../../utils/StateContext";

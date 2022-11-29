@@ -20,7 +20,7 @@ export const StateContext = ({ children }) => {
   );
 
   const [qty, setQty] = useState(localQty ? localQty : 0);
-  const [showCart, setShowCart] = useState(false);
+  const [showCart, setShowCart] = useState(true);
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
   let index;
@@ -33,22 +33,24 @@ export const StateContext = ({ children }) => {
       localStorage.setItem("qty", JSON.stringify(qty));
     }
   }, [cartItems, totalPrice, totalQuantities, qty]);
+  // increment from product page
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
   };
+  // decrement from product page
   const decQty = () => {
     setQty((prevQty) => (prevQty > 1 ? prevQty - 1 : 1));
   };
-
-  const onAddToCart = (product, quantity) => {
-    debugger;
-
+  // Add to cart
+  const onAddToCart = (product, quantity, buyNow) => {
+    // check if product already exists in cart
     const checkProductInCart = cartItems.find(
       (item) => item.product_id === product.product_id
     );
     setTotalPrice(totalPrice + product.price * quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity);
     if (checkProductInCart) {
+      // if product already exists in cart
       const udatedCartItems = cartItems.map((cartProduct) => {
         if (cartProduct.product_id === product.product_id) {
           return {
@@ -61,6 +63,7 @@ export const StateContext = ({ children }) => {
       });
       setCartItems(udatedCartItems);
     } else {
+      // add new product to cart
       setCartItems((prevCartItems) => [
         ...prevCartItems,
         { ...product, quantity: quantity },
@@ -70,9 +73,58 @@ export const StateContext = ({ children }) => {
       variant: "success",
       anchorOrigin: { vertical: "top", horizontal: "center" },
     });
-    // localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    // localStorage.setItem("totalPrice", JSON.stringify(totalPrice));
-    // localStorage.setItem("totalQuantities", JSON.stringify(totalQuantities));
+    if (buyNow) {
+      // if buy now button is clicked
+      setShowCart(true);
+    }
+  };
+  // Remove from cart
+  const onRemoveFromCart = (product) => {
+    // check if product already exists in cart
+    foundProduct = cartItems.find(
+      (item) => item.product_id === product.product_id
+    );
+    index = cartItems.indexOf(foundProduct);
+    setTotalPrice(totalPrice - foundProduct.price * foundProduct.quantity);
+    setTotalQuantities(
+      (prevTotalQuantities) => prevTotalQuantities - foundProduct.quantity
+    );
+    // remove product from cart
+    setCartItems((prevCartItems) =>
+      prevCartItems.filter((item) => item !== product)
+    );
+  };
+  const toggleCartitemQuantity = (product, type) => {
+    // check if product already exists in cart
+    foundProduct = cartItems.find(
+      (item) => item.product_id === product.product_id
+    );
+    index = cartItems.indexOf(foundProduct);
+    if (type === "inc") {
+      // increase quantity
+      setCartItems((prevCartItems) =>
+        prevCartItems.map((item, i) =>
+          item.product_id === product.product_id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        )
+      );
+      setTotalPrice(totalPrice + foundProduct.price);
+      setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
+    } else {
+      // decrease quantity
+      if (foundProduct.quantity > 1) {
+        setCartItems((prevCartItems) =>
+          prevCartItems.map((item, i) =>
+            item.product_id === product.product_id
+              ? { ...item, quantity: item.quantity - 1 }
+              : item
+          )
+        );
+        setTotalPrice(totalPrice - foundProduct.price);
+        setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
+      }
+    }
   };
 
   return (
@@ -87,6 +139,8 @@ export const StateContext = ({ children }) => {
         incQty,
         decQty,
         onAddToCart,
+        onRemoveFromCart,
+        toggleCartitemQuantity,
       }}
     >
       {children}

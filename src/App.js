@@ -9,7 +9,7 @@ import "./assets/styles/shared.scss";
 import "./assets/styles/profile.scss";
 import "./assets/styles/products-list.scss";
 import "./assets/styles/product-detail.scss";
-import "./assets/styles/cart.scss";
+import "./assets/styles/cartSidebar.scss";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Profile from "./profile/containers/Profile";
