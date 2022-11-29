@@ -20,7 +20,7 @@ export const StateContext = ({ children }) => {
   );
 
   const [qty, setQty] = useState(localQty ? localQty : 0);
-  const [showCart, setShowCart] = useState(true);
+  const [showCart, setShowCart] = useState(false);
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
   let index;

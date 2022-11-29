@@ -269,7 +269,14 @@ body {
       justify-content: space-between;
       align-items: center;
       height: 50px;
-
+      margin: -5px;
+      position: sticky;
+      top: 0px;
+      border-radius: 0px 0px 60px 60px;
+      box-shadow: 1px 0px 0px 0px;
+      -webkit-box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
+      -moz-box-shadow: 4px 20px 52px -33px rgba(0, 0, 0, 0.75);
+      box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
       .logo {
         width: 90px;
       }

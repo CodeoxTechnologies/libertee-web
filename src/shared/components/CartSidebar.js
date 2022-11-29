@@ -128,6 +128,13 @@ const Cart = () => {
                     Checkout
                   </Button>
                   <p>All prices incl. tax. Discounts applied at checkout.</p>
+                  <Link
+                    to="/cart"
+                    style={{ textDecoration: "none", color: "#000" }}
+                    onClick={() => setShowCart(false)}
+                  >
+                    <p>View Cart</p>
+                  </Link>
                 </div>
               </div>
             ) : null}

@@ -13,7 +13,7 @@ const ProductDetailCard = ({ product }) => {
         <p className="product-card-top-price">Rs {product.price}</p>
       </div>
       <div className="product-card-middle">
-        <img src={product.image_url} alt="image" />
+        <img src={product.image[0]} alt="image" />
       </div>
       <div className="product-card-bottom">
         <div className="product-card-features">

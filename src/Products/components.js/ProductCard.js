@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
         className="product-card-image"
         onClick={() => window.location.assign(`/product/${product.slug}`)}
       >
-        <img src={`${product.image_url}`} alt="product" />
+        <img src={product.image && product.image[0]} alt="product" />
       </div>
       {/* <div className="product-card-dot">
         <div className="product-card-dot-color">
