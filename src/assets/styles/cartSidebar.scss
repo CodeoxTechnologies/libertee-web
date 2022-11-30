@@ -170,4 +170,12 @@
       border-radius: 15px;
     }
   }
+  .cart-footer-view-cart-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
 }

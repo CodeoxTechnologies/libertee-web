@@ -13,3 +13,14 @@ export const globalGetService = (url, params) => {
       });
   });
 };
+export const globalPostService = (url, data) => {
+  return new Promise(function (resolve, reject) {
+    axiosInstance({
+      method: "POST",
+      url: url,
+      data: data,
+    }).then((response) => {
+      resolve(response);
+    });
+  });
+};

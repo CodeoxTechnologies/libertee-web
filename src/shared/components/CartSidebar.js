@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { Link } from "react-router-dom";
 import { FiGift } from "react-icons/fi";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Cart = () => {
   const {
@@ -19,14 +20,14 @@ const Cart = () => {
     totalPrice,
   } = useStateContext();
   return (
-    <div className="cart" style={{ maxHeight: "100vh" }}>
+    <div className="cart" style={{ maxHeight: "100vh", position: "absolute" }}>
       <div className="cart-drawer">
         <Drawer
           open={showCart}
           anchor="right"
           onClose={() => setShowCart(false)}
         >
-          <Box p={2} width={700}>
+          <Box p={2}>
             <div className="cart-drawer-header">
               <div className="heading" onClick={() => setShowCart(false)}>
                 <ArrowBackIosIcon />
@@ -130,10 +131,11 @@ const Cart = () => {
                   <p>All prices incl. tax. Discounts applied at checkout.</p>
                   <Link
                     to="/cart"
-                    style={{ textDecoration: "none", color: "#000" }}
+                    className="cart-footer-view-cart-link"
                     onClick={() => setShowCart(false)}
                   >
                     <p>View Cart</p>
+                    <AiOutlineArrowRight />
                   </Link>
                 </div>
               </div>

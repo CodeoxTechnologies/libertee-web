@@ -11,7 +11,7 @@ const Header = () => {
   const { totalQuantities, showCart, setShowCart } = useStateContext();
   console.log(totalQuantities, "totalQuantities");
   return (
-    <div className="header" style={showCart ? { } : {zIndex:'999'}}>
+    <div className="header" style={showCart ? {} : { zIndex: "999" }}>
       <div>
         <Link to="/">
           <img src={logo} alt="logo" className="logo" />
