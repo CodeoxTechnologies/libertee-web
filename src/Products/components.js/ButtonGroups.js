@@ -6,19 +6,15 @@ const ButtonGroups = () => {
   const { qty, decQty, incQty } = useStateContext();
   return (
     <ButtonGroup size="large" className="button-group">
-      {qty && (
-        <button
-          className="button-white counter-size button-group-item-3"
-          onClick={() => decQty()}
-        >
-          <span>-</span>
-        </button>
-      )}
-      {qty && (
-        <button className="button-white counter-size button-group-item-2">
-          <span style={{}}>{qty}</span>{" "}
-        </button>
-      )}
+      <button
+        className="button-white counter-size button-group-item-3"
+        onClick={() => decQty()}
+      >
+        <span>-</span>
+      </button>
+      <button className="button-white counter-size button-group-item-2">
+        <span style={{}}>{qty}</span>{" "}
+      </button>
       <button
         className="button-white counter-size button-group-item-1"
         onClick={() => incQty()}

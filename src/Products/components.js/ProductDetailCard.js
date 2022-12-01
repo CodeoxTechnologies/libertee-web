@@ -6,6 +6,7 @@ import soundWave from "../../assets/images/sound-wave.png";
 import medical from "../../assets/images/medical.png";
 
 const ProductDetailCard = ({ product }) => {
+  console.log(product, "product");
   return (
     <Paper className="product-card" elevation={0} S>
       <div className="product-card-top" align="center">
@@ -13,7 +14,10 @@ const ProductDetailCard = ({ product }) => {
         <p className="product-card-top-price">Rs {product.price}</p>
       </div>
       <div className="product-card-middle">
-        <img src={product.image[0]} alt="image" />
+        {product && product.image && product.image.length ? (
+          <img src={product.image[0]} alt="image" />
+        ) : null}
+        {/* */}
       </div>
       <div className="product-card-bottom">
         <div className="product-card-features">

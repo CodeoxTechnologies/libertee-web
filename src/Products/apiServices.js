@@ -8,6 +8,6 @@ export const getProductsApi = (setProducts) => {
 
 export const getProductApi = (slug, setProduct) => {
   globalGetService(`product/details/${slug}`).then((response) => {
-    setProduct(response.data[0]);
+    setProduct(response.data.data);
   });
 };

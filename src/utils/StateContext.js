@@ -19,7 +19,7 @@ export const StateContext = ({ children }) => {
     localTotalQuantities ? localTotalQuantities : 0
   );
 
-  const [qty, setQty] = useState(localQty ? localQty : 0);
+  const [qty, setQty] = useState(localQty ? localQty : 1);
   const [showCart, setShowCart] = useState(false);
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
@@ -43,16 +43,17 @@ export const StateContext = ({ children }) => {
   };
   // Add to cart
   const onAddToCart = (product, quantity, buyNow) => {
+    debugger;
     // check if product already exists in cart
-    const checkProductInCart = cartItems.find(
-      (item) => item.product_id === product.product_id
-    );
+    const checkProductInCart = cartItems.find((item) => item.id === product.id);
+    console.log("product", product);
+    console.log("checkProductInCart", checkProductInCart);
     setTotalPrice(totalPrice + product.price * quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity);
     if (checkProductInCart) {
       // if product already exists in cart
       const udatedCartItems = cartItems.map((cartProduct) => {
-        if (cartProduct.product_id === product.product_id) {
+        if (cartProduct.id === product.id) {
           return {
             ...cartProduct,
             quantity: cartProduct.quantity + quantity,
@@ -81,9 +82,7 @@ export const StateContext = ({ children }) => {
   // Remove from cart
   const onRemoveFromCart = (product) => {
     // check if product already exists in cart
-    foundProduct = cartItems.find(
-      (item) => item.product_id === product.product_id
-    );
+    foundProduct = cartItems.find((item) => item.id === product.id);
     index = cartItems.indexOf(foundProduct);
     setTotalPrice(totalPrice - foundProduct.price * foundProduct.quantity);
     setTotalQuantities(
@@ -96,15 +95,13 @@ export const StateContext = ({ children }) => {
   };
   const toggleCartitemQuantity = (product, type) => {
     // check if product already exists in cart
-    foundProduct = cartItems.find(
-      (item) => item.product_id === product.product_id
-    );
+    foundProduct = cartItems.find((item) => item.id === product.id);
     index = cartItems.indexOf(foundProduct);
     if (type === "inc") {
       // increase quantity
       setCartItems((prevCartItems) =>
         prevCartItems.map((item, i) =>
-          item.product_id === product.product_id
+          item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         )
@@ -116,7 +113,7 @@ export const StateContext = ({ children }) => {
       if (foundProduct.quantity > 1) {
         setCartItems((prevCartItems) =>
           prevCartItems.map((item, i) =>
-            item.product_id === product.product_id
+            item.id === product.id
               ? { ...item, quantity: item.quantity - 1 }
               : item
           )

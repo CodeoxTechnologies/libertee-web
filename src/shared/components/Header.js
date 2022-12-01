@@ -33,7 +33,9 @@ const Header = () => {
           <div>
             <div className="nav-cart" onClick={() => setShowCart(true)}>
               <AddShoppingCartIcon />
-              <span className="cart-quantity">({totalQuantities})</span>
+              <span className="cart-quantity">
+                (<strong>{totalQuantities}</strong>)
+              </span>
             </div>
           </div>
         </div>

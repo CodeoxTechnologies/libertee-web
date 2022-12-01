@@ -18,6 +18,7 @@ import Products from "./Products/containers/Products";
 import Product from "./Products/containers/Product";
 import Cart from "./Payment/containers/Cart";
 import { StateContext } from "./utils/StateContext";
+const App = () => {
   return (
     <SnackbarProvider autoHideDuration={3000}>
       <StateContext>

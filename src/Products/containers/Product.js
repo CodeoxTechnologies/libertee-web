@@ -15,10 +15,21 @@ import { getProductApi } from "../apiServices.js";
 const Product = () => {
   const { slug } = useParams();
   const [product, setProduct] = useState({});
-  console.log("product", product);
   useEffect(() => {
     getProductApi(slug, setProduct);
   }, []);
+  console.log(product);
+  const handleColorChange = (item) => {
+    setProduct({
+      ...product,
+      color_ids: product.color_ids.map((color) =>
+        color.name === item.name
+          ? { ...color, color_active: true }
+          : { ...color, color_active: false }
+      ),
+      selected_color: item.name,
+    });
+  };
   return (
     <div className="product-detail-section">
       <div className="product-detail-body">
@@ -34,7 +45,7 @@ const Product = () => {
               <Link underline="hover" href="/products">
                 Products
               </Link>
-              <Typography color="text.primary">Rabbit Vibrator</Typography>
+              <Typography color="text.primary">{product.name}</Typography>
             </Breadcrumbs>
           </Grid>
         </Grid>
@@ -43,7 +54,10 @@ const Product = () => {
             <ProductDetailCard product={product} />
           </Grid>
           <Grid item xs={12} sm={6} md={7} lg={7}>
-            <ProductDescription product={product} />
+            <ProductDescription
+              product={product}
+              handleColorChange={handleColorChange}
+            />
           </Grid>
         </Grid>
         <Grid container spacing={3}>

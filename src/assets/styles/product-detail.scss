@@ -34,6 +34,7 @@
         }
       }
       .product-card-middle {
+        width: 180px;
         img {
           width: 100%;
           height: 100%;
@@ -119,6 +120,30 @@
           font-weight: 400;
         }
         .product-detail-description-color-list {
+          padding: 1rem 0;
+          display: flex;
+          margin: 0px 10px;
+          .color {
+            width: 35px;
+            height: 35px;
+            background: none;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-right: 12px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            &:hover {
+              box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.9);
+            }
+          }
+
           .product-detail-description-color-list-item {
             font-size: 50px;
           }

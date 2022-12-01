@@ -1,9 +1,8 @@
 import React from "react";
 import Rating from "@material-ui/lab/Rating";
-import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRounded";
 import GroupedButtons from "./ButtonGroups";
 import { useStateContext } from "../../utils/StateContext";
-const ProductDescription = ({ product }) => {
+const ProductDescription = ({ product, handleColorChange }) => {
   const { onAddToCart, qty } = useStateContext();
   return (
     <div className="product-detail-description">
@@ -30,21 +29,27 @@ const ProductDescription = ({ product }) => {
         her ultimate pleasure. With 10 powerful speed settings, rabbit is a
         handy love-glove to satisfy all your desires.
       </div>
-      <div className="product-detail-description-color">
-        <p className="product-detail-description-color-title">Color : </p>
-        <div className="product-detail-description-color-list">
-          {[
-            { color: "#FF005C", active: true },
-            { color: "#5F0081", active: false },
-            { color: "#0060D1", active: false },
-          ].map((item, index) => (
-            <FiberManualRecordRoundedIcon
-              style={{ color: item.color }}
-              className="product-detail-description-color-list-item"
-            />
-          ))}
+      {product.color_ids && product.color_ids.length ? (
+        <div className="product-detail-description-color">
+          <p className="product-detail-description-color-title">Color : </p>
+          <div className="product-detail-description-color-list">
+            {product.color_ids.map((item, index) => (
+              <div
+                className="color"
+                onClick={() => handleColorChange(item)}
+                style={{
+                  backgroundColor: item.name,
+                  boxShadow: item.color_active
+                    ? "0 0 8px 0 rgba(0, 0, 0, 0.6)"
+                    : "",
+                  scale: item.color_active ? "1.2" : "",
+                }}
+              ></div>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
+
       <div className="product-detail-description-quantity">
         <p className="product-detail-description-quantity-title">Quantity : </p>
         <div className="product-detail-description-quanrtity-counter">
