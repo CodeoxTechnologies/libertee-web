@@ -9,6 +9,7 @@ import {
   PrivacyFeatures,
   CartTotal,
 } from "../components";
+import { Quiz } from "../../Products/components.js";
 const Cart = () => {
   const { cartItems } = useStateContext();
   return (
@@ -57,6 +58,8 @@ const Cart = () => {
           </Grid>
         </Grid>
       </div>
+      <div className="divider"></div>
+      <Quiz />
     </div>
   );
 };
