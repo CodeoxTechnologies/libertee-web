@@ -235,6 +235,9 @@
     }
   }
   .cart-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .coupon-input-container {
       .coupon-input-field {
         width: 100%;
@@ -278,6 +281,62 @@
           background-color: #fff;
           color: #000;
         }
+      }
+    }
+    .cart-subtotal-container {
+      .cart-subtotal-heading {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        margin: 0px;
+      }
+    }
+    .cart-subtotal-price-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .cart-subtotal-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        margin: 0px;
+      }
+    }
+    .cart-total-container {
+      .cart-total-heading {
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: bolder;
+        color: #000;
+        margin: 0px;
+      }
+    }
+    .cart-total-price-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .cart-total-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: bolder;
+        color: #000;
+        margin: 0px;
+      }
+    }
+    .checkout-button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .button-big {
+        font-size: 20px;
+        padding: 20px 30px;
+        margin: 0px 10px 0px 0px;
+        border-radius: 30px;
       }
     }
   }
