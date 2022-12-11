@@ -21,6 +21,7 @@ export const StateContext = ({ children }) => {
 
   const [qty, setQty] = useState(localQty ? localQty : 1);
   const [showCart, setShowCart] = useState(false);
+  const [screenSize, setScreenSize] = useState(undefined);
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
   let index;
@@ -138,6 +139,8 @@ export const StateContext = ({ children }) => {
         onAddToCart,
         onRemoveFromCart,
         toggleCartitemQuantity,
+        screenSize,
+        screenSize,
       }}
     >
       {children}

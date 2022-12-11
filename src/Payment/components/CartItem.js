@@ -31,7 +31,7 @@ const CartItem = ({ item }) => {
         <div className="cart-item-quantity">
           <ButtonGroup
             variant="contained"
-            orientation="vertical"
+            orientation="horizontal"
             className="button-group"
           >
             <Button

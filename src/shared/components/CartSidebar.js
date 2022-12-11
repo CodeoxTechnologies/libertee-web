@@ -21,13 +21,13 @@ const Cart = () => {
   } = useStateContext();
   return (
     <div className="cart" style={{ maxHeight: "100vh", position: "absolute" }}>
-      <div className="cart-drawer">
+      <div>
         <Drawer
           open={showCart}
           anchor="right"
           onClose={() => setShowCart(false)}
         >
-          <Box p={2}>
+          <Box p={2} fullScreen className="cart-drawer">
             <div className="cart-drawer-header">
               <div className="heading" onClick={() => setShowCart(false)}>
                 <ArrowBackIosIcon />

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import Home from "./home/containers/Home";
 import Learn from "./learn/containers/Learn";
 import { Navigation, Header } from "./shared";
@@ -17,39 +17,35 @@ import Profile from "./profile/containers/Profile";
 import Products from "./Products/containers/Products";
 import Product from "./Products/containers/Product";
 import Cart from "./Payment/containers/Cart";
-import { StateContext } from "./utils/StateContext";
+import { useStateContext, StateContext } from "./utils/StateContext";
 const App = () => {
   return (
-    <SnackbarProvider autoHideDuration={3000}>
-      <StateContext>
-        <Router>
-          <div className="app">
-            <Header />
-            <Navigation />
-            <Switch>
-              <Route exact={true} path="/">
-                <Home />
-              </Route>
-              <Route exact={true} path="/learn">
-                <Learn />
-              </Route>
-              <Route exact={true} path="/products">
-                <Products />
-              </Route>
-              <Route exact={true} path="/product/:slug">
-                <Product />
-              </Route>
-              <Route exact={true} path="/profile">
-                <Profile />
-              </Route>
-              <Route exact={true} path="/cart">
-                <Cart />
-              </Route>
-            </Switch>
-          </div>
-        </Router>
-      </StateContext>
-    </SnackbarProvider>
+    <Router>
+      <div className="app">
+        <Header />
+        <Navigation />
+        <Switch>
+          <Route exact={true} path="/">
+            <Home />
+          </Route>
+          <Route exact={true} path="/learn">
+            <Learn />
+          </Route>
+          <Route exact={true} path="/products">
+            <Products />
+          </Route>
+          <Route exact={true} path="/product/:slug">
+            <Product />
+          </Route>
+          <Route exact={true} path="/profile">
+            <Profile />
+          </Route>
+          <Route exact={true} path="/cart">
+            <Cart />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 };
 

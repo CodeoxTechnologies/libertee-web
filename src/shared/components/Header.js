@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import libertee from "../../assets/images/libertee.png";
 import Cart from "./CartSidebar";
@@ -9,7 +9,24 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const Header = () => {
   const { totalQuantities, showCart, setShowCart } = useStateContext();
-  console.log(totalQuantities, "totalQuantities");
+  const [dimensions, setDimensions] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const handleResize = () => {
+    console.log("handleResize", window.innerWidth);
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
+  console.log("width", dimensions);
+  const handleCartRedirection = () => {
+    setShowCart(true);
+  };
   return (
     <div className="header" style={showCart ? {} : { zIndex: "999" }}>
       <div>
@@ -31,7 +48,7 @@ const Header = () => {
             <UserSidebar />
           </div>
           <div>
-            <div className="nav-cart" onClick={() => setShowCart(true)}>
+            <div className="nav-cart" onClick={handleCartRedirection}>
               <AddShoppingCartIcon />
               <span className="cart-quantity">
                 (<strong>{totalQuantities}</strong>)
