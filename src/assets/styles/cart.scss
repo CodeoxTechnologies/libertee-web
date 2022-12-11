@@ -468,6 +468,29 @@
         }
       }
     }
+    .delivery-option {
+      margin: 0px;
+      .delivery-option-body {
+        margin: 0px;
+        .delivery-option-body-item {
+          flex-wrap: nowrap;
+          .options {
+            width: 200px;
+          }
+        }
+      }
+    }
+    .privacy-option {
+      margin: 0px;
+      .privacy-option-body {
+        margin: 0px;
+        .privacy-option-body-item {
+          .options {
+            width: 200px;
+          }
+        }
+      }
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 992px) {
   }
