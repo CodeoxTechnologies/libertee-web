@@ -9,21 +9,6 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const Header = () => {
   const { totalQuantities, showCart, setShowCart } = useStateContext();
-  const [dimensions, setDimensions] = React.useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-  const handleResize = () => {
-    console.log("handleResize", window.innerWidth);
-    setDimensions({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize, false);
-  }, []);
-  console.log("width", dimensions);
   const handleCartRedirection = () => {
     setShowCart(true);
   };

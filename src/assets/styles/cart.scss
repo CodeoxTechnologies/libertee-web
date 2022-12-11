@@ -356,6 +356,7 @@
 
       .cart-page-body {
         margin: 5px 0px;
+
         .empty-cart {
           display: flex;
           flex-direction: column;
@@ -379,68 +380,89 @@
           }
         }
         .cart-item {
+          display: none;
+        }
+        .cart-item-mobile {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: nowrap;
           width: 100%;
-          padding: 10px;
-          .cart-image-container {
-            padding: 0px;
+          margin: 10px;
+          .cart-item-mobile-image-container {
+            display: flex;
+            margin: 0px 10px 0px 0px;
             img {
-              width: 100px;
+              width: 150px;
+              height: 150px;
+              // object-fit: cover;
+              border-radius: 15px;
             }
           }
-          .cart-item-details-left {
-            margin-left: 0px;
-            .cart-item-color-container {
-              display: flex;
-              flex-direction: row;
-              justify-content: flex-start;
-              align-items: center;
-              .cart-item-color {
-                width: 20px;
-                height: 20px;
-              }
-            }
-
-            .cart-item-name {
-              font-size: 16px;
-              margin: 10px;
-            }
-            .cart-item-price {
-              font-size: 12px;
-            }
-            .cart-item-quantity {
-              font-family: "Montserrat", sans-serif;
-              font-size: 14px;
-              font-weight: 400;
-              color: #000;
-              margin: 10px;
-            }
-          }
-          .cart-item-details-right {
+          .cart-item-mobile-details {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            width: 100%;
-            .button-group {
-              background-color: #fff;
-              border-radius: 40px;
-              padding: 7px 5px;
-              .group-button {
-                color: #000;
-                border: 1px solid #fff;
-                background: #fff;
-                font-size: 16px;
-                padding: 0px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .cart-item-name {
+              font-size: 16px;
+              font-weight: 600;
+              margin: 3px;
+            }
+            .cart-item-price {
+              font-size: 16px;
+              font-weight: 600;
+              margin: 3px;
+            }
+            .cart-item-quantity {
+              font-size: 16px;
+              font-weight: 600;
+              margin: 3px;
+              .button-group {
+                background-color: #fff;
+                border-radius: 30px;
+                padding: 3px 5px;
+                .group-button {
+                  color: #000;
+                  border: 1px solid #fff;
+                  background: #fff;
+                  font-size: 16px;
+                  padding: 0px;
+                }
               }
             }
-            .cart-item-remove {
-              font-family: "Montserrat", sans-serif;
-              font-size: 16px;
-              font-weight: 400;
-              color: tomato;
-              text-decoration: underline;
-              margin: 10px;
-              cursor: pointer;
+            .item-bottom-container {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .cart-item-color-container {
+                margin: 3px;
+                .cart-item-color {
+                  width: 20px;
+                  height: 20px;
+                  background: none;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  margin-right: 12px;
+                  cursor: pointer;
+                  transition: all 0.5s ease;
+                  -webkit-transition: all 0.5s ease;
+                  -moz-transition: all 0.5s ease;
+                  -ms-transition: all 0.5s ease;
+                  -o-transition: all 0.5s ease;
+                  &:hover {
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.9);
+                  }
+                }
+              }
+              .remove {
+                margin: 3px;
+                color: tomato;
+              }
             }
           }
         }
