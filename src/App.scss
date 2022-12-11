@@ -10,6 +10,10 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      border-radius: 10px;
+      // position: sticky;
+      // top: 0px;
+      // z-index: 1;
 
       .logo {
         width: 48px;
@@ -34,6 +38,7 @@ body {
 
       .navigation-icons {
         font-size: 18px;
+        display: flex;
       }
     }
 
