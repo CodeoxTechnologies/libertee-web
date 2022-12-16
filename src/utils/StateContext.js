@@ -22,6 +22,12 @@ export const StateContext = ({ children }) => {
   const [qty, setQty] = useState(localQty ? localQty : 1);
   const [showCart, setShowCart] = useState(false);
   const [screenSize, setScreenSize] = useState(undefined);
+  const [shipping, setShipping] = useState({
+    regular_delivery: 0,
+    express_delivery: 120,
+    scheduled_delivery: 100,
+    otp_delivery: 40,
+  });
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
   let index;
@@ -44,11 +50,8 @@ export const StateContext = ({ children }) => {
   };
   // Add to cart
   const onAddToCart = (product, quantity, buyNow) => {
-    debugger;
     // check if product already exists in cart
     const checkProductInCart = cartItems.find((item) => item.id === product.id);
-    console.log("product", product);
-    console.log("checkProductInCart", checkProductInCart);
     setTotalPrice(totalPrice + product.price * quantity);
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity);
     if (checkProductInCart) {
@@ -140,7 +143,9 @@ export const StateContext = ({ children }) => {
         onRemoveFromCart,
         toggleCartitemQuantity,
         screenSize,
-        screenSize,
+        setScreenSize,
+        shipping,
+        setShipping
       }}
     >
       {children}

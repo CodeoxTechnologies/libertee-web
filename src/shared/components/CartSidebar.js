@@ -8,6 +8,7 @@ import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { Link } from "react-router-dom";
 import { FiGift } from "react-icons/fi";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { useHistory } from 'react-router-dom';
 
 const Cart = () => {
   const {
@@ -19,6 +20,7 @@ const Cart = () => {
     onRemoveFromCart,
     totalPrice,
   } = useStateContext();
+  const history = useHistory();
   return (
     <div className="cart" style={{ maxHeight: "100vh", position: "absolute" }}>
       <div>
@@ -114,36 +116,25 @@ const Cart = () => {
                   <p className="cart-footer-left-heading">Subtotal</p>
                   <p className="cart-footer-right-text">Rs {totalPrice} /-</p>
                 </div>
-                <div className="gift-option">
-                  <div className="gift-option-left">
-                    <FiGift className="gift-icon" />
-                    <p>Add a gift message or gift wrap</p>
-                    <span> Add </span>
-                  </div>
-                </div>
                 <div className="cart-footer-checkout">
                   <Button
                     className="cart-footer-checkout-button"
                     variant="contained"
+                    onClick={() => { history.push('/information'); setShowCart(false) }}
                   >
                     Checkout
                   </Button>
                   <p>All prices incl. tax. Discounts applied at checkout.</p>
-                  <Link
-                    to="/cart"
-                    className="cart-footer-view-cart-link"
-                    onClick={() => setShowCart(false)}
-                  >
-                    <p>View Cart</p>
-                    <AiOutlineArrowRight />
-                  </Link>
                 </div>
+                {/* <div className="cart-footer-checkout">
+                  <img src="https://cdn.shopify.com/s/files/1/0511/1001/9234/files/payment_icons_footer_cart.png?v=1660130229" />
+                </div> */}
               </div>
             ) : null}
           </Box>
         </Drawer>
       </div>
-    </div>
+    </div >
   );
 };
 export default Cart;

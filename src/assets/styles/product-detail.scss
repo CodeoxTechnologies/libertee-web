@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://use.typekit.net/gak5scy.css");
-
+@import "./font.scss";
 .product-detail-section {
   margin: 10px;
-  font-family: "Montserrat", "sans-serif";
+  font-family: "poppins_regular";
   .product-detail-body {
     margin: 10px;
     .product-detail-breadcrumbs {
       margin: 20px 0px;
+      text-decoration: none;
+      color: black;
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
     .product-card {
       display: flex;
@@ -22,13 +28,13 @@
         align-items: center;
         margin: 10px;
         .product-card-top-title {
-          font-family: "Montserrat", sans-serif;
+          font-family: poppins_regular;
           font-size: 26px;
           font-weight: 400;
           margin: 0px;
         }
         .product-card-top-price {
-          font-family: "Montserrat", sans-serif;
+          font-family: poppins_regular;
           font-size: 30px;
           font-weight: 600;
         }
@@ -76,12 +82,12 @@
         .product-detail-description-top-title {
           font-size: 32px;
           font-weight: 700;
-          font-family: "Montserrat", sans-serif;
+          font-family: poppins_regular;
           margin: 0px;
         }
       }
       .product-detail-description-price {
-        font-family: "Montserrat", sans-serif;
+        font-family: poppins_regular;
         font-size: 28px;
         font-weight: bolder;
         display: flex;

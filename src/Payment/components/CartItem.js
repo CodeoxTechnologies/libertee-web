@@ -17,10 +17,7 @@ const CartItem = ({ item }) => {
           <div className="cart-item-color-container">
             <div
               className="cart-item-color"
-              style={{
-                backgroundColor: item.selected_color,
-                scale: "1.1",
-              }}
+              style={{ backgroundColor: item.selected_color }}
             ></div>
           </div>
         ) : null}

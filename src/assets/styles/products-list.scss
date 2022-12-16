@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://use.typekit.net/gak5scy.css");
-
+@import "./font.scss";
 .products-list-section {
   .products-list-body {
     .products-list-heading {
@@ -10,7 +10,7 @@
     }
 
     .triple-dildo {
-      font-family: "Montserrat", sans-serif;
+      font-family: poppins_regular;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -211,7 +211,7 @@
         font-size: 24px;
       }
       .triple-dildo {
-        font-family: "Montserrat", sans-serif;
+        font-family: poppins_regular;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -235,7 +235,7 @@
         font-size: 34px;
       }
       .triple-dildo {
-        font-family: "Montserrat", sans-serif;
+        font-family: poppins_regular;
         display: flex;
         flex-direction: row;
         justify-content: center;

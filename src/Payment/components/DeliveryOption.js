@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Radio } from "@mui/material";
 
 const DeliveryOption = () => {
-  const [selectedValue, setSelectedValue] = useState("a");
+  const [selectedValue, setSelectedValue] = useState(true);
   return (
     <div className="delivery-option">
       <div className="delivery-option-heading">

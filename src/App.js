@@ -40,7 +40,7 @@ const App = () => {
           <Route exact={true} path="/profile">
             <Profile />
           </Route>
-          <Route exact={true} path="/cart">
+          <Route exact={true} path="/information">
             <Cart />
           </Route>
         </Switch>

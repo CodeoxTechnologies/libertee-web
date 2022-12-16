@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://use.typekit.net/gak5scy.css");
 
+@import "./font.scss";
 .person {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .person :hover {
-    color: #3f51b5;
+  color: #3f51b5;
 }
 
 .sidebar-item {
-    border-bottom: 1px solid #F2F2F2;
-    padding: 10px;
-    cursor: pointer;
-    a {
-        text-decoration: none;
-        color: black;
-       
-    }
-    a:hover {
-        color: #3f51b5;
-    }
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #3f51b5;
+  }
 }

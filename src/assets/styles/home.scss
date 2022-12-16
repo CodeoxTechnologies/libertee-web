@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://use.typekit.net/gak5scy.css");
-
+@import "./font.scss";
 body {
   background: #f2f2f2;
-  font-family: "work-sans", sans-serif;
+  font-family: "poppins_regular";
 }
 
 // mobile devices
@@ -14,7 +14,7 @@ body {
 
       .spotlight-section {
         margin-top: 20px;
-        font-family: "work-sans", sans-serif;
+        font-family: "poppins_regular";
         font-style: normal;
         background-repeat: no-repeat;
         background-size: cover;

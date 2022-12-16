@@ -1,7 +1,9 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { useStateContext } from "../../utils/StateContext";
 
 const CartTotal = () => {
+  const { totalPrice } = useStateContext();
   return (
     <div className="cart-total">
       <Grid container spacing={2} style={{ margin: "10px" }}>
@@ -28,7 +30,7 @@ const CartTotal = () => {
         </Grid>
         <Grid item md={5} lg={5} xs={6} sm={6}>
           <div className="cart-subtotal-price-container">
-            <div className="cart-subtotal-price">Rs 9999/-</div>
+            <div className="cart-subtotal-price">Rs {totalPrice}/-</div>
           </div>
         </Grid>
       </Grid>
@@ -54,7 +56,7 @@ const CartTotal = () => {
         </Grid>
         <Grid item md={5} lg={5}>
           <div className="cart-total-price-container">
-            <div className="cart-total-price">Rs 10039/-</div>
+            <div className="cart-total-price">Rs {totalPrice + 40}/-</div>
           </div>
         </Grid>
       </Grid>
@@ -62,7 +64,9 @@ const CartTotal = () => {
         <Grid item md={7} lg={7} xs={12} sm={12}></Grid>
         <Grid item md={5} lg={5} xs={6} sm={6}>
           <div className="checkout-button-container">
-            <button className="button-black button-big">Checkout</button>
+            <button className="button-black button-big">
+              Continue Payment
+            </button>
           </div>
         </Grid>
       </Grid>
