@@ -9,12 +9,25 @@ const Navigation = () => {
     <div className="navigation">
       <span className="navigation-item">
         <Link to="/learn">
-          <MenuOpenIcon className="menu-icon" /> Learn
+          <span>
+            <MenuOpenIcon className="menu-icon" />
+          </span>
+          <span>
+            Learn
+          </span>
+
         </Link>
       </span>
-      <span>
+      <span className="navigation-item">
+
         <Link to="/products">
-          <LocalMallIcon /> Buy
+          <span>
+            <LocalMallIcon className="menu-icon" />
+          </span>
+          <span>
+            Buy
+          </span>
+
         </Link>
       </span>
     </div>

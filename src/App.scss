@@ -1,345 +1,176 @@
 @import "./assets/styles/font.scss";
-body {
-  @media screen and (min-width: 250px) and (max-width: 768px) {
-    // header
-    .header {
-      margin: 0px;
-      font-family: "poppins_regular";
-      background: #fff;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 10px;
-      // position: sticky;
-      // top: 0px;
-      // z-index: 1;
 
-      .logo {
-        width: 48px;
-      }
+.header {
+  font-family: "poppins_regular";
+  background: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 0px;
+  position: sticky;
+  top: 0px;
+  border-radius: 0px 0px 60px 60px;
+  box-shadow: 1px 0px 0px 0px;
+  -webkit-box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 4px 20px 52px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
+  .logo {
+    width: 90px;
+  }
 
-      .libertee {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .libertee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
 
-        .libertee-logo {
-          width: 98px;
-          height: 26px;
-        }
-
-        p {
-          font-size: 9px;
-          font-weight: 300;
-          align-items: center;
-        }
-      }
-
-      .navigation-icons {
-        font-size: 18px;
-        display: flex;
-      }
+    .libertee-logo {
+      width: 135px;
     }
+  }
 
-    // navigation
-    .navigation {
+  .navigation-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    .nav-cart {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-content: space-between;
       align-items: center;
-      margin: 20px 20px;
-      font-size: 14px;
-      border-bottom: 1px solid #fff;
+
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .shoppingcart {
+      padding: 15px;
+    }
+  }
+}
+.navigation {
+  margin: 5px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+
+  span {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    border-radius: 10px;
+    &:hover {
+      background: rgb(216, 216, 216);
+    }
+    a {
+      display: contents;
+      text-decoration: none;
+      color: #000;
+      span {
+        font-size: 24px;
+      }
+      .menu-icon {
+        font-size: 28px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  // header
+  .header {
+    position: relative;
+    .logo {
+      width: 48px;
+    }
+    .libertee {
+      .libertee-logo {
+        width: 98px;
+        height: 26px;
+      }
+      p {
+        font-size: 8px;
+        font-weight: 300;
+      }
+    }
+    .navigation-icons {
+      font-size: 12px;
+    }
+  }
+  // navigation
+  .navigation {
+    margin: 5px 0px;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    a {
+      text-decoration: none;
+    }
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3px;
+      cursor: pointer;
       a {
+        display: contents;
         text-decoration: none;
-      }
-
-      span {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 5px;
-        cursor: pointer;
-        a {
-          display: contents;
-          text-decoration: none;
-          color: #000;
-          .menu-icon {
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .header {
-      font-family: "poppins_regular";
-      background: #fff;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      .logo {
-        width: 48px;
-      }
-
-      .libertee {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .libertee-logo {
-          width: 98px;
-          height: 26px;
-        }
-
-        p {
-          font-size: 9px;
-          font-weight: 300;
-          align-items: center;
-        }
-      }
-
-      .navigation-icons {
-        font-size: 18px;
-      }
-    }
-
-    .navigation {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: space-between;
-      align-items: center;
-      margin-top: 30px;
-      font-size: 14px;
-      border-bottom: 1px solid #fff;
-
-      span {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 5px;
-        cursor: pointer;
-        a {
-          display: contents;
-          text-decoration: none;
-          color: #000;
-          .menu-icon {
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .header {
-      font-family: "poppins_regular";
-      background: #fff;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      .logo {
-        width: 90px;
-      }
-
-      .libertee {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        color: #000;
         font-size: 12px;
-
-        .libertee-logo {
-          width: 135px;
-        }
-      }
-
-      .navigation-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        .shoppingcart {
-          padding: 15px;
-        }
-      }
-    }
-
-    .navigation {
-      margin: 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 2px solid #fff;
-
-      span {
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        font-size: 24px;
-        margin-bottom: 10px;
-        a {
-          display: contents;
-          text-decoration: none;
-          color: #000;
-          .menu-icon {
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .header {
-      font-family: "poppins_regular";
-      background: #fff;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 50px;
-
-      .logo {
-        width: 90px;
-      }
-
-      .libertee {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-
-        .libertee-logo {
-          width: 135px;
-        }
-      }
-
-      .navigation-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        .shoppingcart {
-          padding: 15px;
-        }
-      }
-    }
-
-    .navigation {
-      margin: 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 2px solid #fff;
-
-      span {
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        font-size: 24px;
-        margin-bottom: 10px;
-        a {
-          display: contents;
-          text-decoration: none;
-          color: #000;
-          .menu-icon {
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 1400px) {
-    .header {
-      font-family: "poppins_regular";
-      background: #fff;
-      padding: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 50px;
-      margin: -5px;
-      position: sticky;
-      top: 0px;
-      border-radius: 0px 0px 60px 60px;
-      box-shadow: 1px 0px 0px 0px;
-      -webkit-box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
-      -moz-box-shadow: 4px 20px 52px -33px rgba(0, 0, 0, 0.75);
-      box-shadow: 4px 20px 52px -33px rgb(0 0 0 / 75%);
-      .logo {
-        width: 90px;
-      }
-
-      .libertee {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-
-        .libertee-logo {
-          width: 135px;
-        }
-      }
-
-      .navigation-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin-right: 10px;
-        .nav-cart {
+        span {
           display: flex;
-          margin-left: 10px;
-          cursor: pointer;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16px;
         }
-        .shoppingcart {
-          padding: 15px;
-        }
-      }
-    }
-
-    .navigation {
-      margin: 10px 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 2px solid #fff;
-
-      span {
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        font-size: 24px;
-        margin-bottom: 10px;
-        a {
-          display: contents;
-          text-decoration: none;
-          color: #000;
-          .menu-icon {
-            font-size: 28px;
-          }
+        .menu-icon {
+          font-size: 20px;
         }
       }
     }
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header {
+    .logo {
+      width: 48px;
+    }
+
+    .libertee {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .libertee-logo {
+        width: 98px;
+        height: 26px;
+      }
+
+      p {
+        font-size: 9px;
+        font-weight: 300;
+        align-items: center;
+      }
+    }
+
+    .navigation-icons {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+@media screen and (min-width: 1400px) {
 }

@@ -54,7 +54,7 @@ const CartTotal = () => {
             </div>
           </div>
         </Grid>
-        <Grid item md={5} lg={5}>
+        <Grid item md={5} lg={5} xs={6} sm={6}>
           <div className="cart-total-price-container">
             <div className="cart-total-price">Rs {totalPrice + 40}/-</div>
           </div>
@@ -62,7 +62,7 @@ const CartTotal = () => {
       </Grid>
       <Grid container spacing={2} style={{ margin: "10px" }}>
         <Grid item md={7} lg={7} xs={12} sm={12}></Grid>
-        <Grid item md={5} lg={5} xs={6} sm={6}>
+        <Grid item md={5} lg={5} xs={12} sm={12}>
           <div className="checkout-button-container">
             <button className="button-black button-big">
               Continue Payment

@@ -501,6 +501,49 @@
         }
       }
     }
+    .cart-total {
+      .cart-subtotal-container {
+        .cart-subtotal-heading {
+          font-size: 16px;
+        }
+      }
+      .cart-subtotal-price-container {
+        .cart-subtotal-price {
+          font-size: 16px;
+        }
+      }
+      .cart-total-container {
+        .cart-total-heading {
+          font-size: 20px;
+        }
+      }
+      .cart-total-price-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .cart-total-price {
+          font-size: 20px;
+          margin: 0px 15px;
+        }
+      }
+      .checkout-button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        .button-big {
+          font-size: 16px;
+          padding: 1rem 2rem;
+          margin: 0px 10px 0px 0px;
+          border-radius: 30px;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 992px) {
   }

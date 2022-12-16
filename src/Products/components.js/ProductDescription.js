@@ -1,9 +1,11 @@
 import React from "react";
 import Rating from "@material-ui/lab/Rating";
 import GroupedButtons from "./ButtonGroups";
+import { useHistory } from "react-router-dom";
 import { useStateContext } from "../../utils/StateContext";
 const ProductDescription = ({ product, handleColorChange }) => {
   const { onAddToCart, qty } = useStateContext();
+  const history = useHistory();
   return (
     <div className="product-detail-description">
       <div className="product-detail-description-top">
@@ -65,7 +67,7 @@ const ProductDescription = ({ product, handleColorChange }) => {
         </button>
         <button
           className="button-white button-big"
-          onClick={() => onAddToCart(product, qty, true)}
+          onClick={() => history.push("/information")}
         >
           Buy Now{" "}
         </button>
