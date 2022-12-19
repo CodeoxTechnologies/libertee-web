@@ -214,31 +214,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        p {
-          margin: 0px;
-        }
-      }
-    }
-  }
-  .privacy-option {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    .privacy-option-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      font-weight: 600;
-      margin: 5px;
-      .privacy-option-body-item {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        p {
-          margin: 0px;
+        .options {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 150px;
+          margin: 3px;
         }
       }
     }
