@@ -4,12 +4,12 @@ import { Radio } from "@mui/material";
 const DeliveryOption = () => {
   const [selectedValue, setSelectedValue] = useState(true);
   return (
-    <div className="delivery-option">
-      <div className="delivery-option-heading">
+    <div className="delivery-option-and-privacy-option">
+      <div className="delivery-option-and-privacy-option-heading">
         <h3>Delivery Options</h3>
       </div>
-      <div className="delivery-option-body">
-        <div className="delivery-option-body-item">
+      <div className="delivery-option-and-privacy-option-body">
+        <div className="delivery-option-and-privacy-option-body-item">
           <p className="options">Regular Dellivery (up to 7 days) </p>
           <span>
             <Radio
@@ -20,7 +20,7 @@ const DeliveryOption = () => {
           </span>
           <p>Free</p>
         </div>
-        <div className="delivery-option-body-item">
+        <div className="delivery-option-and-privacy-option-body-item">
           <p className="options">Fast Dellivery (3 days max) </p>
           <span>
             <Radio

@@ -33,12 +33,12 @@ const CartSection = () => {
             <Box className="cart-page-body">
               {cartItems.length
                 ? cartItems.map((item) =>
-                    dimensions.width > 766 ? (
-                      <CartItem item={item} key={item.id} />
-                    ) : (
-                      <CartItemMobile item={item} key={item.id} />
-                    )
+                  dimensions.width > 766 ? (
+                    <CartItem item={item} key={item.id} />
+                  ) : (
+                    <CartItemMobile item={item} key={item.id} />
                   )
+                )
                 : null}
             </Box>
           </Grid>

@@ -63,8 +63,8 @@ const CartTotal = () => {
       <Grid container spacing={2} style={{ margin: "10px" }}>
         <Grid item md={7} lg={7} xs={12} sm={12}></Grid>
         <Grid item md={5} lg={5} xs={12} sm={12}>
-          <div className="checkout-button-container">
-            <button className="button-black button-big">
+          <div className="coupon-button-container">
+            <button className="coupon-button">
               Continue Payment
             </button>
           </div>

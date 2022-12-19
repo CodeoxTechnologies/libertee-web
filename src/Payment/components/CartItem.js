@@ -34,16 +34,16 @@ const CartItem = ({ item }) => {
           >
             <Button
               className="group-button"
-              onClick={() => toggleCartitemQuantity(item, "inc")}
+              onClick={() => toggleCartitemQuantity(item, "dec")}
             >
-              <ExpandLessIcon />
+              -
             </Button>
             <Button className="group-button">{item.quantity}</Button>
             <Button
               className="group-button"
-              onClick={() => toggleCartitemQuantity(item, "dec")}
+              onClick={() => toggleCartitemQuantity(item, "inc")}
             >
-              <ExpandMoreIcon />
+              +
             </Button>
           </ButtonGroup>
         </div>
