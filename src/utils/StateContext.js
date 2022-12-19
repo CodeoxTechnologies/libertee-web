@@ -22,12 +22,17 @@ export const StateContext = ({ children }) => {
   const [qty, setQty] = useState(localQty ? localQty : 1);
   const [showCart, setShowCart] = useState(false);
   const [screenSize, setScreenSize] = useState(undefined);
-  const [shipping, setShipping] = useState({
+  const [shippingOptions] = useState({
     regular_delivery: 0,
     express_delivery: 120,
     scheduled_delivery: 100,
     otp_delivery: 40,
   });
+  const [deliveryOptionCharge, setDeliveryOptionCharge] = useState(0)
+  const [privacyOptionCharge, setPrivacyOptionCharge] = useState(40)
+
+
+
   const { enqueueSnackbar } = useSnackbar();
   let foundProduct;
   let index;
@@ -144,8 +149,11 @@ export const StateContext = ({ children }) => {
         toggleCartitemQuantity,
         screenSize,
         setScreenSize,
-        shipping,
-        setShipping
+        shippingOptions,
+        deliveryOptionCharge,
+        setDeliveryOptionCharge,
+        privacyOptionCharge,
+        setPrivacyOptionCharge
       }}
     >
       {children}

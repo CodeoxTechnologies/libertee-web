@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Radio } from "@mui/material";
+import { useStateContext } from "../../utils/StateContext";
 
 const PrivacyFeatures = () => {
-  const [value, setValue] = useState(true);
+  const { privacyOptionCharge, setPrivacyOptionCharge, shippingOptions } = useStateContext();
   return (
     <div className="delivery-option-and-privacy-option">
       <div className="delivery-option-and-privacy-option-heading">
@@ -13,8 +14,8 @@ const PrivacyFeatures = () => {
           <p className="options">Schedule the date and time</p>
           <span>
             <Radio
-              checked={value}
-              onChange={() => setValue(true)}
+              checked={privacyOptionCharge === shippingOptions.scheduled_delivery}
+              onChange={() => setPrivacyOptionCharge(shippingOptions.scheduled_delivery)}
               style={{ color: "#000" }}
             />
           </span>
@@ -24,8 +25,8 @@ const PrivacyFeatures = () => {
           <p className="options">Delivery on OTP only</p>
           <span>
             <Radio
-              checked={!value}
-              onChange={() => setValue(false)}
+              checked={privacyOptionCharge === shippingOptions.otp_delivery}
+              onChange={() => setPrivacyOptionCharge(shippingOptions.otp_delivery)}
               style={{ color: "#000" }}
             />
           </span>

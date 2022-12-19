@@ -3,12 +3,11 @@
 .header {
   font-family: "poppins_regular";
   background: #fff;
-  padding: 15px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
   margin: 0px;
   position: sticky;
   top: 0px;
@@ -67,10 +66,11 @@
     display: flex;
     align-items: center;
     font-size: 24px;
-
+    transition: all;
     border-radius: 10px;
     &:hover {
-      background: rgb(216, 216, 216);
+      background: rgb(228, 228, 228);
+      animation: ease-in-out 2s;
     }
     a {
       display: contents;

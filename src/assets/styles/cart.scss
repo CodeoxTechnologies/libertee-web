@@ -207,8 +207,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      font-weight: 600;
-      margin: 5px;
       .delivery-option-and-privacy-option-body-item {
         display: flex;
         flex-direction: row;
@@ -290,6 +288,9 @@
       align-items: center;
       .cart-subtotal-price {
         font-family: "poppins_regular";
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-size: 20px;
         font-weight: 600;
         color: #000;
@@ -313,6 +314,9 @@
       .cart-total-price {
         font-family: "poppins_regular";
         font-size: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-weight: bolder;
         color: #000;
         margin: 0px;
