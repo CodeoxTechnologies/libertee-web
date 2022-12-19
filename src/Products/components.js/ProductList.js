@@ -29,11 +29,11 @@ const ProductList = ({ products }) => {
       slidesPerView={
         dimensions.width <= 768
           ? 1.5
-          : dimensions.width <= 1024
-          ? 2
-          : dimensions.width <= 1200
-          ? 3
-          : 4
+          : dimensions.width <= 992
+            ? 2
+            : dimensions.width <= 1400
+              ? 3
+              : 4
       }
       navigation={dimensions.width <= 768 ? false : true}
       pagination={{ clickable: true }}
